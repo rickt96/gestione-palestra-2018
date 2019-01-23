@@ -1,0 +1,17 @@
+﻿<UserControl x:Name="uc" x:Class="GestionePalestra.ControlCategoria"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GestionePalestra"
+             mc:Ignorable="d" Height="60" Width="280">
+    <Grid>
+        <Label x:Name="lbl_header" Content="Header grande" Margin="60,5,10,0" FontFamily="Segoe UI Semibold" FontSize="16" Padding="5,0,0,0" VerticalContentAlignment="Center" Background="{x:Null}" Height="30" VerticalAlignment="Top">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="lbl_header_2" Content="label piccolo" Margin="60,35,10,0" FontSize="11" Padding="5,0,0,0" VerticalContentAlignment="Center" Background="{x:Null}" Foreground="#FF8F8F8F" Height="20" VerticalAlignment="Top"/>
+        <Image x:Name="img_src" HorizontalAlignment="Left" Margin="5,5,0,5" Width="50" Source="/Gestione Palestra;component/Resources/Icons/BlueFolder.png"/>
+    </Grid>
+</UserControl>

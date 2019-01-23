@@ -1,0 +1,62 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionePalestra"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="GestionePalestra.WindowAvviso"
+        mc:Ignorable="d"
+        Height="594.501" Width="450" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Grid>
+        <GroupBox Margin="10,331,10,0" Height="170" VerticalAlignment="Top" Header="Destinatari" BorderBrush="#FFD5DFE5" Foreground="{DynamicResource BasicBlue}">
+            <Grid>
+                <DataGrid x:Name="dg_istruttori_dest" Margin="10" BorderThickness="1" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" Background="White" HorizontalGridLinesBrush="{x:Null}" VerticalGridLinesBrush="{x:Null}" AutoGenerateColumns="False" BorderBrush="#FFB9B9B9">
+                    <DataGrid.Columns>
+                        <DataGridCheckBoxColumn Header="#" Binding="{Binding Selezionato}"></DataGridCheckBoxColumn>
+                        <DataGridTextColumn Header="Istruttore" Binding="{Binding Nome}" IsReadOnly="True"></DataGridTextColumn>
+                        <DataGridTextColumn Header="Data lettura" Binding="{Binding DataLettura}" IsReadOnly="True"></DataGridTextColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Grid>
+        </GroupBox>
+        <GroupBox x:Name="groupBox" Margin="10,10,10.2,0" Height="316" VerticalAlignment="Top" Header="Informazioni" BorderBrush="#FFD5DFE5" Foreground="{DynamicResource BasicBlue}">
+            <Grid>
+                <TextBox x:Name="txt_descrizione" Margin="106,167,19.8,0" TextWrapping="Wrap" TabIndex="4" FontSize="12" BorderThickness="1" MaxLength="254" FontFamily="Segoe UI" Foreground="Black" Height="65" VerticalAlignment="Top" Text="asd&#xD;&#xA;asd&#xD;&#xA;asd">
+                    <TextBox.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+                    </TextBox.BorderBrush>
+                </TextBox>
+                <Label x:Name="label_Copy10" Content="Descrizione:" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label_Copy2" Content="Priorità:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Width="85"/>
+                <RadioButton x:Name="rdb_priorita_0" Content="Normale" HorizontalAlignment="Left" Margin="106,78,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" GroupName="priorita" IsChecked="True"/>
+                <RadioButton x:Name="rdb_priorita_1" Content="Urgente" HorizontalAlignment="Left" Margin="187,78,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" GroupName="priorita"/>
+                <Label x:Name="label_Copy12" Content="Data e ora:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Width="85"/>
+                <xctk:DateTimePicker x:Name="dtp_data" Margin="106,106,19.8,0" VerticalContentAlignment="Center" TabIndex="4" FontSize="12" BorderThickness="1" FontFamily="Segoe UI" Foreground="Black" Height="23" VerticalAlignment="Top" IsReadOnly="False"/>
+                <Label x:Name="label_Copy1" Content="Tipologia:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cmb_tipologia" Margin="106,41,95.8,0" VerticalAlignment="Top" Height="26" TabIndex="3" FontFamily="Segoe UI" Foreground="Black" Padding="4,2,2,2"/>
+                <Label x:Name="label_Copy3" Content="Titolo:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26"/>
+                <TextBox x:Name="txt_titolo" Height="26" Margin="106,10,95.8,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" MaxLength="50"/>
+                <Label x:Name="label_Copy4" Content="Cliente:" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cmb_cliente" Margin="106,136,19.8,0" VerticalAlignment="Top" Height="20" TabIndex="3" FontFamily="Segoe UI" Foreground="Black" Padding="4,0,2,0" IsEditable="True"/>
+                <Label x:Name="label_Copy5" Content="Visibilità:" HorizontalAlignment="Left" Margin="10,240,0,0" VerticalAlignment="Top" Width="85"/>
+                <RadioButton x:Name="rdb_visibilita_0_personale" Content="Personale" HorizontalAlignment="Left" Margin="106,246,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" GroupName="visibilita" Checked="rdb_visibilita_0_personale_Checked" IsChecked="True" Unchecked="rdb_visibilita_0_personale_Unchecked"/>
+                <RadioButton x:Name="rdb_visibilita_1_pubblica" Content="Pubblica" HorizontalAlignment="Left" Margin="202,246,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" GroupName="visibilita"/>
+            </Grid>
+        </GroupBox>
+        <Grid x:Name="grid_actions" Background="{StaticResource BasicGray}" Height="42" VerticalAlignment="Bottom">
+            <Button x:Name="btn_salva" Style="{StaticResource standardButton}" IsDefault="True" Margin="0,10,10,10" Click="btn_salva_Click" HorizontalAlignment="Right" Width="80">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteSave.png" Height="14" Width="14"/>
+                    <TextBlock Text="Salva" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btn_elimina" Style="{StaticResource standardButton}" Click="btn_elimina_Click" IsDefault="True" Margin="0,10,100,10" HorizontalAlignment="Right" Width="80">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteDelete.png" Height="14" Width="14"/>
+                    <TextBlock Text="Elimina" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Window>

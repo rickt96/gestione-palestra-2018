@@ -1,0 +1,22 @@
+﻿<UserControl x:Name="uc" x:Class="GestionePalestra.ControlEsercizi"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GestionePalestra"
+             mc:Ignorable="d" Height="234.875" Width="190" MouseLeave="uc_MouseLeave" MouseEnter="uc_MouseEnter" LostFocus="uc_LostFocus" GotFocus="uc_GotFocus">
+    <Grid x:Name="grid_main">
+        <Rectangle x:Name="rect" RadiusX="5" RadiusY="5" Fill="White" StrokeThickness="2">
+            <Rectangle.Stroke>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.InactiveCaptionColorKey}}"/>
+            </Rectangle.Stroke>
+        </Rectangle>
+        <Label x:Name="lbl_header" Content="Header_1" Margin="5,0,5,25" HorizontalContentAlignment="Center" Padding="0" VerticalContentAlignment="Center" Background="{x:Null}" Height="20" VerticalAlignment="Bottom" FontFamily="Segoe UI Semibold" FontSize="13">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HotTrackColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <Label x:Name="lbl_header_2" Content="Header_2" HorizontalContentAlignment="Center" Padding="0" VerticalContentAlignment="Center" Background="{x:Null}" Foreground="#FFFF8000" Height="20" VerticalAlignment="Bottom" Margin="5,0,5,5"/>
+        <Grid x:Name="grid_img" Margin="5,5,5,50"/>
+    </Grid>
+</UserControl>

@@ -1,0 +1,59 @@
+﻿<Window x:Class="GestionePalestra.WindowSysUtility"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xtk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:local="clr-namespace:GestionePalestra"
+        mc:Ignorable="d"
+        Height="696.999" Width="720.428" Loaded="Window_Loaded">
+    <Grid>
+        <Button x:Name="button_Copy" Content="Stampa" HorizontalAlignment="Left" Margin="10,40,0,0" VerticalAlignment="Top" Width="75" Click="button_Copy_Click"/>
+        <Button x:Name="prova_parametr_insert" Content="paramentri insert prova" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="156" Click="prova_parametr_insert_Click"/>
+        <ListBox x:Name="lbx_prova_avvisi" Height="363" Margin="10,134,516,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="0 ***** 💪🚀" HorizontalAlignment="Left" Margin="185,7,0,0" VerticalAlignment="Top" Foreground="#FFFF8000"/>
+
+        <Button Width="100" Height="100" Margin="140,530,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Click="Button_Click_2">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <Grid>
+                        <Ellipse Stroke="#FF006DF0"  StrokeThickness="1">
+                            <Ellipse.Fill>
+                                <ImageBrush x:Name="img_profilo" Stretch="UniformToFill" ImageSource="/Gestione Palestra;component/Resources/Icons/BlueLogin.png" />
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Grid>
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <Button x:Name="button" Content="clienti dialog" HorizontalAlignment="Left" Margin="140,60,0,0" VerticalAlignment="Top" Width="75" Click="button_Click_3"/>
+        <Button x:Name="btn_cm" Content="Click Me"
+        ContextMenuService.IsEnabled="False"
+        Margin="10,109,476,0" Click="btn_cm_Click" Height="20" VerticalAlignment="Top">
+            <Button.ContextMenu>
+                <ContextMenu >
+                    <MenuItem Header="Menu 1"/>
+                    <MenuItem Header="Menu 1"/>
+                    <MenuItem Header="Menu 1"/>
+                    <MenuItem Header="Menu 1"/>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>
+        <Button x:Name="button1" Content="print scheda" HorizontalAlignment="Left" Margin="195,104,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click_1"/>
+        <ListBox x:Name="lbx_prova_expander" HorizontalAlignment="Right" Height="200" Margin="0,7,10,0" VerticalAlignment="Top" Width="304"/>
+        <Button x:Name="button2" Content="nuovo avviso window nuova" HorizontalAlignment="Left" Margin="215,45,0,0" VerticalAlignment="Top" Width="153" Click="button2_Click_1"/>
+        <Button x:Name="button3" Content="docX" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Width="75" Click="button3_Click_1"/>
+        <Button Content="carica img" HorizontalAlignment="Left" Margin="10,515,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_4"/>
+        <Image x:Name="img_get_db" HorizontalAlignment="Left" Height="100" Margin="390,556,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="prendi img" HorizontalAlignment="Left" Margin="27,573,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_5"/>
+        <Button Content="importa immagini" HorizontalAlignment="Left" Margin="27,630,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_6"/>
+        <Button Content="import esercizi" Style="{StaticResource ImageButton}" HorizontalAlignment="Left" Margin="293,448,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_7"></Button>
+        <DataGrid x:Name="dg_prova" HorizontalAlignment="Left" Height="153" Margin="353,497,0,0" VerticalAlignment="Top" Width="261"/>
+        <Button Content="sel esercizio" HorizontalAlignment="Left" Margin="252,277,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_8"/>
+        <Button Content="Get file" HorizontalAlignment="Left" Margin="252,321,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_9"/>
+        <Button Content="test" HorizontalAlignment="Left" Margin="270,369,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_10"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="520,321,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_11"/>
+
+
+    </Grid>
+</Window>

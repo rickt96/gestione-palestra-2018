@@ -1,0 +1,9 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:GestionePalestra">
+
+    <SolidColorBrush x:Key="BasicBlue" Color="#FF1A70B3" />
+    <SolidColorBrush x:Key="BasicGray" Color="WhiteSmoke" />
+    <SolidColorBrush x:Key="BlueBackgroundOld" Color="#FF2EB3FF" />
+
+</ResourceDictionary>

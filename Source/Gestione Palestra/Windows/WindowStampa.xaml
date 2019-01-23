@@ -1,0 +1,53 @@
+﻿<Window x:Class="GestionePalestra.WindowStampa"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:GestionePalestra"
+        mc:Ignorable="d"
+        Height="619.666" Width="304.833" ResizeMode="NoResize" Loaded="Window_Loaded">
+    <Grid>
+        <Separator Height="30" Margin="10,248,10,0" VerticalAlignment="Top"/>
+        <Grid Height="233" Margin="10,10,10,0" VerticalAlignment="Top" Background="White">
+            <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Left" Margin="10,10,-4,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Semibold"><Run Text="P"/><Run Text="agina di apertura e chiusura"/></TextBlock>
+            <TextBlock x:Name="textBlock3_Copy" HorizontalAlignment="Left" Margin="10,26,-181,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336"><Run Text="Seleziona "/><Run Text="le immagini da utilizzare come copertina"/></TextBlock>
+            <Button x:Name="btn_carica_banner_2" Style="{StaticResource standardButton}" HorizontalAlignment="Left" Margin="148,202,-105,-62" VerticalAlignment="Top" Width="122" Height="20" Click="btn_carica_banner_2_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteExport.png" Height="14" Width="14"/>
+                    <TextBlock Text="Carica" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Grid x:Name="grid_banner_2" HorizontalAlignment="Left" Height="148" Margin="148,49,-105,-37" VerticalAlignment="Top" Width="122" Background="#FFE4E4E4"/>
+            <Grid x:Name="grid_banner_1" HorizontalAlignment="Left" Height="148" Margin="10,49,0,-37" VerticalAlignment="Top" Width="122" Background="#FFE4E4E4"/>
+            <Button x:Name="btn_carica_banner_2_Copy" Style="{StaticResource standardButton}" HorizontalAlignment="Left" Margin="10,202,0,-62" VerticalAlignment="Top" Width="122" Height="20" Click="btn_carica_banner_2_Click">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteExport.png" Height="14" Width="14"/>
+                    <TextBlock Text="Carica" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Grid Height="133" Margin="10,283,10,0" VerticalAlignment="Top" Background="White">
+            <TextBlock x:Name="textBlock2_Copy2" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" Text="Layout"/>
+            <TextBlock x:Name="textBlock3_Copy1" HorizontalAlignment="Left" Margin="10,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="336"><Run Text="Seleziona "/><Run Text="un layout di stampa"/></TextBlock>
+            <RadioButton Content="Modello 1 - descrizione del modello" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top"/>
+            <RadioButton Content="Modello 2 - descrizione del modello" HorizontalAlignment="Left" Margin="10,67,0,-8" VerticalAlignment="Top"/>
+            <RadioButton Content="Modello 3 - descrizione del modello" HorizontalAlignment="Left" Margin="10,87,0,-28" VerticalAlignment="Top"/>
+            <RadioButton Content="Modello 4 - descrizione del modello" HorizontalAlignment="Left" Margin="10,107,0,-48" VerticalAlignment="Top"/>
+        </Grid>
+        <Separator Height="30" Margin="10,421,10,0" VerticalAlignment="Top"/>
+        <Grid Height="84" Margin="10,456,10,0" VerticalAlignment="Top" Background="White">
+            <TextBlock x:Name="textBlock2_Copy1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" Text="Apertura file"/>
+            <CheckBox x:Name="ckb_apri_file" Content="Apri il file dopo la creazione" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
+            <Button x:Name="btn_apri_dir" Style="{StaticResource standardButton}" Content="Apri cartella" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Width="117" Height="20" Click="btn_apri_dir_Click"/>
+        </Grid>
+        <Grid Background="{StaticResource BasicGray}" Height="42" VerticalAlignment="Bottom">
+            <Button x:Name="btn_salva" Style="{StaticResource standardButton}" Click="btn_salva_Click" Margin="0,10,10,10" HorizontalAlignment="Right" Width="100">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhitePrint.png" Height="14" Width="14"/>
+                    <TextBlock Text="Stampa" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

@@ -1,0 +1,142 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:GestionePalestra"
+        x:Class="GestionePalestra.MainWindow"
+        mc:Ignorable="d"
+        Height="704.4" MinHeight="810" Width="916" MinWidth="1096" WindowStartupLocation="CenterScreen" ResizeMode="CanResizeWithGrip" Loaded="Window_Loaded" BorderThickness="0" Icon="/Gestione Palestra;component/Main.ico" Closing="Window_Closing" Background="White" KeyDown="Window_KeyDown" WindowState="Maximized">
+
+
+    <Grid>
+
+        <!-- grid header in alto -->
+        <Grid Height="100" VerticalAlignment="Top" Margin="2,0,0,0">
+            <Grid.Background>
+                <SolidColorBrush Color="White"/>
+            </Grid.Background>
+
+            <!-- log GestionePalestra -->
+
+            <!-- label di benvenuto -->
+            <Label x:Name="lbl_welcome" Content="nome utente" HorizontalAlignment="Left" Margin="152,20,0,0" VerticalContentAlignment="Center" FontSize="20" FontFamily="Segoe UI Semibold" Height="32" VerticalAlignment="Top" Padding="5,2">
+                <Label.Foreground>
+                    <SolidColorBrush Color="#FF1A70B3"/>
+                </Label.Foreground>
+            </Label>
+            <Ellipse HorizontalAlignment="Right" Width="70" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp" Margin="0,15,15,15" Stroke="#FF707070" StrokeThickness="2">
+                <Ellipse.Fill>
+                    <ImageBrush x:Name="img_profilo" Stretch="UniformToFill" ImageSource="/Gestione Palestra;component/Resources/Icons/BlueLogin.png" />
+                </Ellipse.Fill>
+            </Ellipse>
+            <Image x:Name="img_setting" Source="/Gestione Palestra;component/Resources/Icons/BlueSettings.png" HorizontalAlignment="Right" ToolTip="Impostazioni" MouseLeftButtonUp="img_setting_MouseLeftButtonUp" Margin="0,34,162.6,31" Visibility="Visible" Width="35"/>
+            <Image HorizontalAlignment="Left" Width="136" Source="/Gestione Palestra;component/Resources/MainLogo.png" Stretch="Fill"/>
+            <Label Content="livello permessi" HorizontalAlignment="Left" Margin="152,52,0,0" VerticalAlignment="Top" Width="98">
+                <Label.Foreground>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkDarkColorKey}}"/>
+                </Label.Foreground>
+            </Label>
+
+            <Border Margin="0,34,107.6,31" BorderBrush="#FFE63B3B" BorderThickness="1" CornerRadius="20" HorizontalAlignment="Right" Width="35" Background="#FFE63B3B">
+                <Label x:Name="lbl_notifiche" Content="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16" Padding="0" Foreground="White" Margin="3"></Label>
+            </Border>
+
+
+
+
+            <!-- stackpanel per immagine profilo, opzioni e notifiche -->
+
+        </Grid>
+        <Frame x:Name="frame_main" Margin="0,100,0,0" NavigationUIVisibility="Hidden" Background="White"/>
+    </Grid>
+</Window>
+
+
+
+
+<!--
+<Ellipse x:Name="ellips_login" Width="77" MouseLeftButtonUp="ellips_login_MouseLeftButtonUp" Stroke="#FF006DF0" Margin="0,20,20,20" HorizontalAlignment="Right">
+    <Ellipse.Fill>
+        <  x:Name="img_profilo" Stretch="UniformToFill" ImageSource="/Gestione Palestra;component/Resources/Icons/BlueLogin.png" />
+    </Ellipse.Fill>
+</Ellipse>
+-->
+
+
+<!-- template -->
+<!--
+    <Window.Resources>
+
+        <ControlTemplate x:Key = "HomeButton" TargetType = "Button">
+            -->
+<!--design-->
+<!--
+            <Grid>
+                <Border x:Name="border" Background="#FF206FB1" BorderThickness="3" CornerRadius="15">
+                    <Border.Effect>
+                        <DropShadowEffect ShadowDepth="2" BlurRadius="8"/>
+                    </Border.Effect>
+                    <Border.BorderBrush>
+                        <SolidColorBrush Color="White"/>
+                    </Border.BorderBrush>
+                </Border>
+                -->
+<!--<Label x:Name="lbl_header" Content="HEADER" Margin="10" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" Foreground="White"/>-->
+<!--
+            </Grid>
+
+            -->
+<!--triggers-->
+<!--
+            <ControlTemplate.Triggers>
+                <Trigger Property = "IsMouseOver" Value = "True">
+                    <Setter TargetName ="border" Property="Background">
+                        <Setter.Value>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                        </Setter.Value>
+                    </Setter>
+                </Trigger>
+            </ControlTemplate.Triggers>
+
+        </ControlTemplate>
+    </Window.Resources>-->
+
+
+
+<!-- grid nuovo, in lavorazione -->
+<!--<Grid x:Name="grid_home" Background="#FFFFA6A6" Margin="100,172,100,50">
+            <Grid x:Name="grid_clienti" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="350" Height="250" Background="#FF466FAB" MouseLeftButtonDown="grid_clienti_MouseLeftButtonDown">
+                <Image x:Name="image" Source="/Gestione Palestra;component/Resources/Icons/WhiteLogin.png" Margin="10,10,10,60"/>
+                <Label x:Name="label1" Content="Clienti" Margin="10,0,10,10" FontSize="24" HorizontalContentAlignment="Center" FontFamily="Segoe UI Semibold" Foreground="White" Height="45" VerticalAlignment="Bottom"/>
+            </Grid>
+            <Grid x:Name="grid_clienti_Copy" HorizontalAlignment="Left" Margin="390,290,0,0" VerticalAlignment="Top" Width="350" Height="250" Background="#FF466FAB" MouseLeftButtonDown="grid_clienti_MouseLeftButtonDown">
+                <Image x:Name="image1" Source="/Gestione Palestra;component/Resources/Icons/WhiteLogin.png" Margin="10,10,10,60"/>
+                <Label x:Name="label2" Content="Modelli" Margin="10,0,10,10" FontSize="24" HorizontalContentAlignment="Center" FontFamily="Segoe UI Semibold" Foreground="White" Height="45" VerticalAlignment="Bottom"/>
+            </Grid>
+            <Grid x:Name="grid_clienti_Copy1" HorizontalAlignment="Left" Margin="20,290,0,0" VerticalAlignment="Top" Width="350" Height="250" Background="#FF466FAB" MouseLeftButtonDown="grid_clienti_MouseLeftButtonDown">
+                <Image x:Name="image2" Source="/Gestione Palestra;component/Resources/Icons/WhiteLogin.png" Margin="10,10,10,60"/>
+                <Label x:Name="label3" Content="Crea allenamento" Margin="10,0,10,10" FontSize="24" HorizontalContentAlignment="Center" FontFamily="Segoe UI Semibold" Foreground="White" Height="45" VerticalAlignment="Bottom"/>
+            </Grid>
+            <Grid x:Name="grid_clienti_Copy2" HorizontalAlignment="Left" Margin="390,20,0,0" VerticalAlignment="Top" Width="350" Height="250" Background="#FF466FAB" MouseLeftButtonDown="grid_clienti_MouseLeftButtonDown">
+                <Image x:Name="image3" Source="/Gestione Palestra;component/Resources/Icons/WhiteLogin.png" Margin="10,10,10,60"/>
+                <Label x:Name="label4" Content="Nuova anamnesi" Margin="10,0,10,10" FontSize="24" HorizontalContentAlignment="Center" FontFamily="Segoe UI Semibold" Foreground="White" Height="45" VerticalAlignment="Bottom"/>
+            </Grid>
+            <Grid x:Name="grid_clienti_Copy3" HorizontalAlignment="Left" Margin="390,560,0,0" VerticalAlignment="Top" Width="350" Height="250" Background="#FF466FAB" MouseLeftButtonDown="grid_clienti_MouseLeftButtonDown">
+                <Image x:Name="image4" Source="/Gestione Palestra;component/Resources/Icons/WhiteLogin.png" Margin="10,10,10,60"/>
+                <Label x:Name="label5" Content="Scadenze" Margin="10,0,10,10" FontSize="24" HorizontalContentAlignment="Center" FontFamily="Segoe UI Semibold" Foreground="White" Height="45" VerticalAlignment="Bottom"/>
+            </Grid>
+            <Grid x:Name="grid_clienti_Copy4" HorizontalAlignment="Left" Margin="20,560,0,0" VerticalAlignment="Top" Width="350" Height="250" Background="#FF466FAB" MouseLeftButtonDown="grid_clienti_MouseLeftButtonDown">
+                <Image x:Name="image5" Source="/Gestione Palestra;component/Resources/Icons/WhiteLogin.png" Margin="10,10,10,60"/>
+                <Label x:Name="label6" Content="Appuntamenti" Margin="10,0,10,10" FontSize="24" HorizontalContentAlignment="Center" FontFamily="Segoe UI Semibold" Foreground="White" Height="45" VerticalAlignment="Bottom"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="115" Margin="760,290,0,0" VerticalAlignment="Top" Width="350" Background="#FF466FAB"/>
+            <Grid HorizontalAlignment="Left" Height="115" Margin="760,425,0,0" VerticalAlignment="Top" Width="350" Background="#FF466FAB"/>
+            <Grid HorizontalAlignment="Left" Height="115" Margin="760,20,0,0" VerticalAlignment="Top" Width="350" Background="#FF466FAB"/>
+            <Grid HorizontalAlignment="Left" Height="20" Margin="740,405,0,0" VerticalAlignment="Top" Width="20" Background="Black"/>
+            <Grid HorizontalAlignment="Left" Height="115" Margin="760,155,0,0" VerticalAlignment="Top" Width="350" Background="#FF466FAB"/>
+            <Grid HorizontalAlignment="Left" Height="115" Margin="760,560,0,0" VerticalAlignment="Top" Width="350" Background="#FF466FAB"/>
+            <Grid HorizontalAlignment="Left" Height="115" Margin="760,695,0,0" VerticalAlignment="Top" Width="350" Background="#FF466FAB"/>
+            <Grid Height="115" Margin="1130,695,20,0" VerticalAlignment="Top" Background="#FF466FAB"/>
+        </Grid>-->

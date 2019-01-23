@@ -1,0 +1,78 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestionePalestra"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="GestionePalestra.Pages.PageGestionePalestra"
+      mc:Ignorable="d"
+      Title="PageGestionePalestra" d:DesignWidth="786.407" d:DesignHeight="520.246">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+        <StatusBar BorderThickness="0,1,0,0" Height="25" VerticalAlignment="Bottom" Grid.ColumnSpan="2" BorderBrush="{DynamicResource BasicBlue}">
+            <StatusBar.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.InactiveBorderColorKey}}"/>
+            </StatusBar.Background>
+            <Label x:Name="lbl_tot_record" Content="0 record trovati" HorizontalAlignment="Left" FontSize="12" Padding="5,0"/>
+            <Separator Width="1" Foreground="White" HorizontalAlignment="Left" Background="{DynamicResource BasicBlue}" BorderBrush="{DynamicResource BasicBlue}"/>
+            <Label x:Name="lbl_display_record" Content="0 record mostrati" HorizontalAlignment="Left" FontSize="12" Padding="5,0"/>
+            <Separator Width="1" Foreground="White" HorizontalAlignment="Left" Background="{DynamicResource BasicBlue}"/>
+            <Label x:Name="lbl_tot_sel" Content="0 record selezionati" HorizontalAlignment="Left" FontSize="12" Padding="5,0"/>
+            <Separator Width="1" Foreground="White" HorizontalAlignment="Left" Margin="0,2" Background="{DynamicResource BasicBlue}"/>
+            <Label x:Name="lbl_last_update" Content="ultimo aggiornamento alle 00:00" HorizontalAlignment="Left" FontSize="12" Padding="5,0"/>
+        </StatusBar>
+        <TextBlock VerticalAlignment="Top" Margin="10,83,10,0" Height="19" Grid.Column="1"><Hyperlink x:Name="hl_avanzate" FontSize="14" Click="btn_ricerca_avanzata_Click"><Run Text="Ricerca avanzata"/></Hyperlink></TextBlock>
+        <DataGrid x:Name="dg_clienti" AutoGenerateColumns="True" BorderBrush="#FFB9B9B9" CanUserResizeRows="False" Background="White" CanUserAddRows="False" Foreground="#FF042271" BorderThickness="1" HorizontalGridLinesBrush="#FFAEB7B6" VerticalGridLinesBrush="#FFAEB7B6" PreviewKeyDown="controlli_tastiera_datagrid" IsReadOnly="True" AlternationCount="1" MouseDoubleClick="mouse_doubleclick_datagrid" SelectionChanged="dg_clienti_SelectionChanged" Margin="10,57,12,36" GridLinesVisibility="All" Loaded="dg_clienti_Loaded">
+            <DataGrid.AlternatingRowBackground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.GradientInactiveCaptionColorKey}}"/>
+            </DataGrid.AlternatingRowBackground>
+        </DataGrid>
+        <xctk:WatermarkTextBox x:Name="txt_cerca" Height="26" Margin="10,57,10,0" TextWrapping="Wrap" VerticalAlignment="Top" PreviewKeyDown="txt_clienti_cerca_PreviewKeyDown" Watermark="ricerca rapida..." Padding="3,0" Grid.Column="1" VerticalContentAlignment="Center" FontSize="14"/>
+        <Button x:Name="btn_elimina" Style="{StaticResource standardButton}" Click="btn_elimina_Click" IsDefault="True" Margin="10,143,10,0" ToolTip="Elimina il cliente selezionato" Height="24" VerticalAlignment="Top" Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteSave.png" Height="14" Width="14"/>
+                <TextBlock Text="Elimina" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btn_apri_scheda" Style="{StaticResource standardButton}" Click="btn_apri_scheda_Click" IsDefault="True" Margin="10,114,10,0" ToolTip="Apri la scheda del cliente selezionato" Height="24" VerticalAlignment="Top" Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteEdit.png" Height="14" Width="14"/>
+                <TextBlock Text="Modifica" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btn_nuovo_cliente" Style="{StaticResource standardButton}" Click="btn_nuovo_cliente_Click" IsDefault="True" Margin="10,172,10,0" ToolTip="Aggiungi un nuovo cliente" Height="24" VerticalAlignment="Top" Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteAdd2.png" Height="14" Width="14"/>
+                <TextBlock Text="Inserisci" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{StaticResource standardButton}" Margin="10,0,10,65" VerticalAlignment="Bottom" Height="24" Grid.Column="1" IsEnabled="False">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteExport.png" Height="14" Width="14"/>
+                <TextBlock Text="Esporta" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{StaticResource standardButton}" Margin="10,0,10,94" VerticalAlignment="Bottom" Height="24" Grid.Column="1" IsEnabled="False">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Gestione Palestra;component/Resources/Icons/WhitePrint.png" Height="14" Width="14"/>
+                <TextBlock Text="Stampa" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btn_aggiorna" Style="{StaticResource standardButton}" Margin="10,0,10,36" VerticalAlignment="Bottom" Height="24" Grid.Column="1" Click="btn_aggiorna_Click">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteRefresh.png" Height="14" Width="14"/>
+                <TextBlock Text="Aggiorna" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Label Content="Gestione clienti" Style="{StaticResource HeaderLabel}" HorizontalAlignment="Left" Margin="47,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_indietro" Style="{StaticResource standardButton }" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="32" Height="32" Padding="4" Click="btn_indietro_Click">
+            <Button.Content>
+                <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteBack2.png"/>
+            </Button.Content>
+        </Button>
+
+    </Grid>
+</Page>

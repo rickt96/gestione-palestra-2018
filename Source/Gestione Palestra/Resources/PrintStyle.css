@@ -1,0 +1,283 @@
+<style type="text/css" media="print">
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.page { /*foglio: per modificare la zona utilizzabile del foglio modificare il padding di page e poi la height di subpage*/
+    width: 21cm;
+    min-height: 29.7cm;
+    padding: 1.5cm 1cm 1.5cm 1cm;
+    margin: 1cm auto;
+    border-radius: 5px;
+}
+
+.subpage { /*area del foglio utilizzabile*/
+    padding: 0px;   /*spaziatura testo interno alla pagina*/
+    border: 1px white solid;
+    height: 266mm;
+    /*outline: 2cm lightgray solid;*/
+    position: relative; /*subpage è il vecchio pagecontainer e dovra tenere comtrolli ancorati in basso*/
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+}
+
+</style>
+
+<style type="text/css">
+
+/************************
+* Header
+************************/
+.header {
+    margin-bottom: 15px; /*margine di sepazione sotto degli altri elementi*/
+    border-bottom: 4px solid #4A6C93;   /*4pixel di bordo in fondo*/
+}
+.header:after {
+content: "";
+display: table;
+clear: both;
+}
+.header > img {
+    height: 50px;
+    float: right;
+    margin: 5px;   /*margine dell'immagine dalgi altri controlli*/
+}
+.header > h2 {
+    color:#4A6C93;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 50%;
+    float: left;
+    margin: 20px 10px 10px 10px;
+}
+.header > hr {
+    background: #4A6C93;
+}
+
+
+
+/************************
+ * Info scheda
+************************/
+.infoScheda{
+    margin-bottom: 10px; /*margine di sepazione dagli elementi esterni*/
+    margin-top: 10px;
+    display: block;  
+}
+.infoScheda table {
+    border-spacing: 15px; /*https://stackoverflow.com/questions/716442/css-cell-margin*/
+    border: 0;
+    width: 100%;
+    font-family: 'Segoe UI';
+}
+.infoScheda td {
+    background-color: lightgray;
+    padding: 8px;
+    width: 50%;
+}
+
+
+
+/************************
+ * Primo banner landscape
+************************/
+.bannerLandscape{
+    margin: 15px; /*margine di sepazione dagli elementi esterni*/
+    background-image: url("banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /*stretch dell'immagine*/
+    border: 2px solid rgb(88, 88, 88);
+    padding: 10px;
+    border-radius: 10px; 
+    height: 200px;
+}
+
+
+
+/************************
+ * Scadenza scheda
+************************/
+.scadenzaScheda{
+    margin: 15px;
+    border-radius: 10px; 
+    background-color: #4A6C93;
+    font-family: 'Segoe UI';
+    position: relative;
+    padding: 10px;
+}
+
+.scadenzaScheda table{
+    border-spacing: 10px;
+    margin-left: 20px;
+}
+
+.scadenzaScheda .text{
+    color: white;
+    font-size: 17px;
+}
+.scadenzaScheda .box{
+    background-color: white;
+    border-radius: 5px;
+    width: 60px;
+    height: 35px;
+}
+
+
+/************************
+ * Sedute
+************************/
+.sedute{
+    margin: 15px;
+    padding: 20px;
+    background-color: lightgrey;
+    border-radius: 10px; 
+}
+.sedute .title{
+    margin: 0px;
+    font-family: 'Segoe UI Semibold';
+    font-size: 23px;
+    font-weight: bold;
+}
+.sedute .text {
+    margin-top: 5px;
+    font-size: 13px;
+    font-family: 'Segoe UI';
+    font-weight: normal;
+}
+.sedute > span {
+    background-color: white;
+    border-radius: 4px;
+    margin-top: 15px;
+    margin-right: 15px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    color: #4A6C93;
+    font-family: 'Segoe UI';
+    font-size: 24px;
+}
+
+/************************
+ * Tabella esercizi
+************************/
+.tabellaEsercizi {
+     border-top: 15px;  /*non viene applicata la proprietà???*/
+ }
+ .tabellaEsercizi table {
+    border-collapse: collapse;
+    width: 100%;
+ }
+
+ .tabellaEsercizi table .head{
+    padding: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: #4A6C93;
+    color: white;
+    border-bottom: 4px solid white;
+ }
+ .tabellaEsercizi table .content{
+    padding: 4px;
+    background-color: lightgrey;
+    color: black;
+    text-align: center;
+    border: 4px solid white;
+    font-family: 'Segoe UI';
+ }
+ .tabellaEsercizi table .index {
+    padding: 4px;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: #4A6C93;
+    color: white;
+    border: 4px solid white;
+ }
+ .tabellaEsercizi table .yellow{
+    background-color: #f9ad46;
+ }
+
+
+
+/************************
+* Contenitore immagini
+************************/
+.contenitoreImmagini{
+    position: absolute; /*posizione absolute per poterlo ancorare in fondo alla pagina, ovviamente prima deve esserci il div con la classe page container*/
+    bottom: 0px;
+    margin: 10px;
+    width: 100%;
+}
+.card{
+    margin: -3px -6px 0px 0px;       /* inline block pone un margin di default, sistemabile con un -6px */
+    width: 16%;                      /* 16%; provo a dargli un 16% in modo che per riga ne ospiti al massimo 6, metodo poco elegante */ 
+    height: 170px;
+    display: inline-block;           /* inline block per mostrarli tutti uno a fianco all'altro*/
+    border: 2px solid black;
+    background-color: white;
+}
+.card .merge-left{    /* rimuove il margine sinistro della card degli esercizi */
+    border-left: 0px solid black;
+}
+.card .merge-right{   /* rimuove il margine destro della card degli esercizi */
+    border-right: 0px;
+}
+.card .merge-full {   /* rimuove il margine sx e dx */
+    border-right: 0px;
+    border-left: 0px;
+}
+.card .label {
+    text-align: center;
+    padding: 10px;
+    background-color: #4A6C93;
+    color: white;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+
+}
+.card img {
+    width: 100%;
+    background-color: white;
+}
+
+
+/************************
+ * Banner grande finale
+************************/
+.bannerPotrait {
+    background-image: url("banner1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /*stretch dell'immagine*/
+    border: 2px solid rgb(88, 88, 88);
+    padding: 10px;
+    border-radius: 10px;
+    height: 100%;
+}
+
+</style>

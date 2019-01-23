@@ -1,0 +1,83 @@
+﻿<Page x:Class="GestionePalestra.Pages.PageHome"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestionePalestra"
+      mc:Ignorable="d"
+      Title="Pagina iniziale" Height="579" Width="1000">
+    <Grid x:Name="grid_main" Margin="0" Background="White" IsEnabled="False">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Height="170" Margin="30,205,10,0" VerticalAlignment="Top" Background="{StaticResource BasicBlue}" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Margin="20" Source="/Gestione Palestra;component/Resources/Icons/WhiteStethoscope.png"/>
+            <Label Content="Anamnesi" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold" Foreground="White" Grid.Column="1" Height="37" Background="{x:Null}"/>
+            <TextBlock x:Name="txt_anamnesi" Margin="15,47,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Foreground="White"/>
+            <Button x:Name="btn_anamnesi" HorizontalAlignment="Right" Margin="0,0,10,10" Style="{StaticResource ResourceKey=standardButton}" VerticalAlignment="Bottom" Width="120" Height="27" FontSize="14" FontWeight="Normal" Grid.Column="1" Content="Gestisci anamnesi" BorderThickness="1" BorderBrush="White" Click="btn_anamnesi_Click"/>
+            <TextBlock VerticalAlignment="Bottom" Margin="15,0,0,13.62" HorizontalAlignment="Left" Grid.Column="1"><Hyperlink x:Name="hl_inserisci_anamnesi" FontSize="14" Foreground="White" Click="hl_inserisci_anamnesi_Click"><Run Text="Crea anamnesi"/></Hyperlink></TextBlock>
+        </Grid>
+        <Grid Height="170" Margin="10,10,30,0" VerticalAlignment="Top" Background="{StaticResource BasicBlue}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Margin="20" Source="/Gestione Palestra;component/Resources/Icons/WhiteGroup.png"/>
+            <Label Content="Clienti" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold" Foreground="White" Grid.Column="1" Height="37" Background="{x:Null}"/>
+            <TextBlock x:Name="txt_clienti" Margin="15,47,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Foreground="White"/>
+            <Button x:Name="btn_clienti" HorizontalAlignment="Right" Margin="0,0,10,10" Style="{StaticResource ResourceKey=standardButton}" VerticalAlignment="Bottom" Width="120" Height="27" FontSize="14" FontWeight="Normal" Grid.Column="1" Content="Gestisci clienti" BorderThickness="1" BorderBrush="White" Click="btn_clienti_Click"/>
+            <TextBlock VerticalAlignment="Bottom" Margin="15,0,0,14" HorizontalAlignment="Left" Grid.Column="1"><Hyperlink x:Name="hl_inserisci_cliente" FontSize="14" Foreground="White" Click="hl_inserisci_cliente_Click"><Run Text="Inserisci cliente"/></Hyperlink></TextBlock>
+        </Grid>
+        <Grid Height="170" Margin="30,10,10,0" VerticalAlignment="Top" Background="{StaticResource BasicBlue}" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Margin="20" Source="/Gestione Palestra;component/Resources/Icons/WhiteTest.png"/>
+            <Label Content="Esercizi" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold" Foreground="White" Grid.Column="1" Height="37" Background="{x:Null}"/>
+            <TextBlock x:Name="txt_esercizi" Margin="15,47,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Foreground="White"/>
+            <Button x:Name="btn_esercizi" HorizontalAlignment="Right" Margin="0,0,10,10" Style="{StaticResource ResourceKey=standardButton}" VerticalAlignment="Bottom" Width="120" Height="27" FontSize="14" FontWeight="Normal" Content="Gestisci esercizi" BorderThickness="1" BorderBrush="White" Grid.Column="1" Click="btn_esercizi_Click"/>
+            <TextBlock VerticalAlignment="Bottom" Margin="15,0,0,14" HorizontalAlignment="Left" Grid.Column="1"><Hyperlink x:Name="hl_aggiungi_esercizio" FontSize="14" Foreground="White" Click="hl_aggiungi_esercizio_Click"><Run Text="Crea esercizio"/></Hyperlink></TextBlock>
+        </Grid>
+        <Grid Height="170" Margin="10,395,30,0" VerticalAlignment="Top" Background="{StaticResource BasicBlue}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Margin="20" Source="/Gestione Palestra;component/Resources/Icons/WhiteLogin.png"/>
+            <Label Content="Istruttore" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold" Foreground="White" Grid.Column="1" Height="37" Background="{x:Null}"/>
+            <TextBlock Margin="15,47,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Foreground="White"/>
+            <Button x:Name="btn_profilo" HorizontalAlignment="Right" Margin="0,0,10,10" Style="{StaticResource ResourceKey=standardButton}" VerticalAlignment="Bottom" Width="120" Height="27" FontSize="14" FontWeight="Normal" Grid.Column="1" Content="Elenco istruttori" BorderThickness="1" BorderBrush="White" Click="btn_profilo_Click"/>
+            <TextBlock VerticalAlignment="Bottom" Margin="15,0,0,12.84" HorizontalAlignment="Left" Grid.Column="1"><Hyperlink x:Name="hl_pannello_istruttore" FontSize="14" Foreground="White" Click="hl_pannello_istruttore_Click"><Run Text="Apri profilo"/></Hyperlink></TextBlock>
+        </Grid>
+        <Grid Height="170" Margin="30,395,10,0" VerticalAlignment="Top" Background="{StaticResource BasicBlue}" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Margin="20" Source="/Gestione Palestra;component/Resources/Icons/WhiteMessage.png"/>
+            <Label Content="Comunicazioni" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold" Foreground="White" Grid.Column="1" Height="37" Background="{x:Null}"/>
+            <TextBlock VerticalAlignment="Top" Margin="15,52,0,0" HorizontalAlignment="Left" Grid.Column="1"><Hyperlink x:Name="hl_inserisci_avviso" FontSize="14" Foreground="White" Click="hl_inserisci_avviso_Click"><Run Text="Inserisci avviso"/></Hyperlink></TextBlock>
+            <Button x:Name="btn_agenda" HorizontalAlignment="Right" Margin="0,0,10,10" Style="{StaticResource ResourceKey=standardButton}" VerticalAlignment="Bottom" Width="120" Height="27" FontSize="14" FontWeight="Normal" Grid.Column="1" Content="Visualizza agenda" BorderThickness="1" BorderBrush="White" Click="btn_agenda_Click"/>
+            <TextBlock VerticalAlignment="Top" Margin="15,76,0,0" HorizontalAlignment="Left" Grid.Column="1"><Hyperlink x:Name="hl_inserisci_annotazione" FontSize="14" Foreground="White" Click="hl_inserisci_annotazione_Click"><Run Text="Aggiungi annotazione"/></Hyperlink></TextBlock>
+            <TextBlock VerticalAlignment="Top" Margin="15,100,0,0" HorizontalAlignment="Left" Grid.Column="1"><Hyperlink x:Name="hl_notifiche" FontSize="14" Foreground="White"><Run Text="leggi notifiche"/></Hyperlink></TextBlock>
+        </Grid>
+        <Grid Height="170" Margin="10,205,30,0" VerticalAlignment="Top" Background="{StaticResource BasicBlue}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Margin="20" Source="/Gestione Palestra;component/Resources/Icons/WhiteModel.png"/>
+            <Label Content="Allenamenti" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="20" FontFamily="Segoe UI Semibold" Foreground="White" Grid.Column="1" Height="37" Background="{x:Null}"/>
+            <TextBlock x:Name="txt_schede_allenamento" Margin="15,47,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" Foreground="White"/>
+            <Button x:Name="btn_schede" HorizontalAlignment="Right" Margin="0,0,10,10" Style="{StaticResource ResourceKey=standardButton}" VerticalAlignment="Bottom" Width="120" Height="27" FontSize="14" FontWeight="Normal" Grid.Column="1" Content="Gestisci schede" BorderThickness="1" BorderBrush="White" Click="btn_schede_Click"/>
+            <TextBlock VerticalAlignment="Bottom" Margin="15,0,0,14" HorizontalAlignment="Left" Grid.Column="1"><Hyperlink x:Name="hl_inserisci_scheda" FontSize="14" Foreground="White" Click="hl_inserisci_scheda_Click"><Run Text="Crea scheda"/></Hyperlink></TextBlock>
+        </Grid>
+    </Grid>
+</Page>

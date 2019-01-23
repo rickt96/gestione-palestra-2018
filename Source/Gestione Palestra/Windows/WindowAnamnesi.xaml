@@ -1,0 +1,123 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionePalestra"
+        xmlns:Controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Toolkit"
+        xmlns:xtk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        x:Class="GestionePalestra.WindowAnamnesi"
+        mc:Ignorable="d"
+        Height="761.2" Width="1389.2" ResizeMode="NoResize" Background="White" Loaded="Window_Loaded" FontSize="14">
+    <Grid>
+        <Grid Background="{StaticResource BasicGray}" Height="42" VerticalAlignment="Bottom">
+            <Button x:Name="btn_salva" Style="{StaticResource standardButton}" Click="btn_salva_Click" Margin="0,10,10,10" HorizontalAlignment="Right" Width="100">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteSave.png" Height="14" Width="14"/>
+                    <TextBlock Text="Salva" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btn_elimina" Style="{StaticResource standardButton}" Click="btn_elimina_Click" Margin="0,10,115,10" HorizontalAlignment="Right" Width="100">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteDelete.png" Height="14" Width="14"/>
+                    <TextBlock Text="Elimina" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <GroupBox Header="Anamnesi generale" HorizontalAlignment="Left" Margin="348,10,0,0" VerticalAlignment="Top" Width="333" Height="222" Foreground="{DynamicResource BasicBlue}">
+            <Grid>
+                <Label x:Name="label_Copy3" Content="Lifestyle:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cmb_stile_vita" Margin="125,13,0,0" VerticalAlignment="Top" Height="20" TabIndex="3" FontFamily="Segoe UI" Foreground="Black" Padding="4,2,2,2" HorizontalAlignment="Left" Width="152"/>
+                <Label x:Name="label_Copy" Content="obiettivo:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cmb_obiettivo" Margin="125,43,0,0" VerticalAlignment="Top" Height="20" TabIndex="4" FontFamily="Segoe UI" Foreground="Black" Padding="4,2,2,2" HorizontalAlignment="Left" Width="152"/>
+                <Label x:Name="label_Copy2" Content="Preferenze:" HorizontalAlignment="Left" Margin="10,128,0,0" VerticalAlignment="Top" Width="85"/>
+                <RadioButton x:Name="rdb_0_aerobico" Content="Aerobico" HorizontalAlignment="Left" Margin="125,157,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="6"/>
+                <RadioButton x:Name="rdb_1_isotonico" Content="isotonico" HorizontalAlignment="Left" Margin="125,180,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="7"/>
+                <CheckBox x:Name="ckb_2_entrambi" Content="Entrambi" HorizontalAlignment="Left" Margin="125,134,0,0" VerticalAlignment="Top" VerticalContentAlignment="Center" Checked="ckb_2_entrambi_Checked" Unchecked="ckb_2_entrambi_Unchecked"/>
+                <Label x:Name="label_Copy11" Content="Frequenza:" HorizontalAlignment="Left" Margin="10,70,0,0" VerticalAlignment="Top" Width="88"/>
+                <Label x:Name="label_Copy12" Content="Durata seduta:" HorizontalAlignment="Left" Margin="10,99,0,0" VerticalAlignment="Top"/>
+                <xtk:TimePicker x:Name="tp_durata_seduta" HorizontalAlignment="Left" Margin="125,103,0,0" Width="118" VerticalContentAlignment="Center" TabIndex="9" FontSize="12" BorderThickness="1" FontFamily="Segoe UI" Foreground="Black" Height="20" VerticalAlignment="Top" IsReadOnly="False"/>
+                <xtk:IntegerUpDown x:Name="nud_frequenza_settimanale" HorizontalAlignment="Left" Margin="126,73,0,0" Width="55" VerticalContentAlignment="Center" TabIndex="8" Value="3" FontSize="12" BorderThickness="1" FontFamily="Segoe UI" Foreground="Black" Height="20" VerticalAlignment="Top" Padding="0"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Dati sessione" Margin="10,10,0,0" VerticalAlignment="Top" Height="280" HorizontalAlignment="Left" Width="333" Foreground="{DynamicResource BasicBlue}">
+            <Grid Background="White">
+                <Label x:Name="label_Copy14" Content="Istruttore:" HorizontalAlignment="Left" Margin="10,121,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cmb_istruttore" Margin="115,123,10,0" VerticalAlignment="Top" Height="20" SelectedIndex="0" TabIndex="11" FontFamily="Segoe UI" Foreground="Black" Padding="4,2,2,2"/>
+                <Label x:Name="label4" Content="Data:" HorizontalAlignment="Left" Margin="10,150,0,0" VerticalAlignment="Top"/>
+                <DatePicker x:Name="dp_data" Margin="115,151,0,0" VerticalAlignment="Top" Background="White" TabIndex="12" HorizontalAlignment="Left" Width="165">
+                    <DatePicker.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlDarkColorKey}}"/>
+                    </DatePicker.BorderBrush>
+                </DatePicker>
+                <Label x:Name="label_Copy10" Content="Note:" HorizontalAlignment="Left" Margin="10,179,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="txt_annotazioni" Height="61" Margin="115,183,10,0" TextWrapping="Wrap" Text="TextBox&#xD;&#xA;Asd&#xD;&#xA;Asd" VerticalAlignment="Top"/>
+                <Grid x:Name="grid_img" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="100" Background="{DynamicResource BasicGray}"/>
+                <Label Content="Nome:&#x9;&#x9;---&#xD;&#xA;Cognome:&#x9;---&#xD;&#xA;Sesso:&#x9;&#x9;---&#xD;&#xA;Data nascita:&#x9;---" Margin="115,10,10,0" VerticalAlignment="Top" Height="100"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Anamnesi clinica" Margin="348,237,0,0" VerticalAlignment="Top" Height="429" HorizontalAlignment="Left" Width="333" Foreground="{DynamicResource BasicBlue}">
+            <Grid>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" Text="Patologie riscontrate:"/>
+                <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="10,162,0,0" TextWrapping="Wrap" Text="Farmaci assunti:" VerticalAlignment="Top" Foreground="Black" Width="275"/>
+                <Button x:Name="btn_elimina_patologia" Content="Elimina" HorizontalAlignment="Right" Margin="0,134,12.8,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btn_aggiungi_patologia" Content="Aggiungi" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Width="75" Click="btn_aggiungi_elemento_lista"/>
+                <Button x:Name="btn_elimina_farmaco" Content="Elimina" HorizontalAlignment="Right" Margin="0,295,12.8,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btn_aggiungi_farmaco" Content="Aggiungi" HorizontalAlignment="Left" Margin="10,295,0,0" VerticalAlignment="Top" Width="75" Click="btn_aggiungi_elemento_lista"/>
+                <CheckBox x:Name="ckb_bevitore" Content="bevitore" HorizontalAlignment="Left" Margin="10,341,0,0" VerticalAlignment="Top" Padding="5,0,0,0" VerticalContentAlignment="Center"/>
+                <CheckBox x:Name="ckb_fumatore" Content="fumatore" HorizontalAlignment="Left" Margin="10,365,0,0" VerticalAlignment="Top" Padding="5,0,0,0" VerticalContentAlignment="Center"/>
+                <Button x:Name="btn_modifica_patologia" Content="Modifica" HorizontalAlignment="Left" Margin="90,134,0,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btn_modifica_farmaco" Content="Modifica" HorizontalAlignment="Left" Margin="90,295,0,0" VerticalAlignment="Top" Width="75"/>
+                <ListBox x:Name="lbx_patologie" Height="100" Margin="10,29,12.8,0" VerticalAlignment="Top"/>
+                <ListBox x:Name="lbx_farmaci" Height="109" Margin="10,181,12.8,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Anamnesi fisiologica" HorizontalAlignment="Left" Height="371" Margin="10,295,0,0" VerticalAlignment="Top" Width="333" Foreground="{DynamicResource BasicBlue}">
+            <Grid>
+                <Label x:Name="label_Copy1" Content="Peso(kg):" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top"/>
+                <Slider x:Name="slide_peso" Margin="198,42,10,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Maximum="130" Minimum="40" Value="70" IsSnapToTickEnabled="True" Height="20" TabIndex="2" ValueChanged="scorrimento_slider" TickFrequency="0.1" TickPlacement="BottomRight" LargeChange="0.1"/>
+                <xtk:DoubleUpDown x:Name="nud_peso" HorizontalAlignment="Left" Margin="126,42,0,0" Width="55" VerticalContentAlignment="Center" TabIndex="1" FontSize="12" BorderThickness="1" FontFamily="Segoe UI" Foreground="Black" Height="20" VerticalAlignment="Top" Padding="0" ValueChanged="nud_peso_ValueChanged"/>
+                <Label x:Name="label_Copy9" Content="Altezza(cm):" HorizontalAlignment="Left" Margin="10,68,0,0" VerticalAlignment="Top"/>
+                <Slider x:Name="slide_altezza" Margin="198,71,10,0" VerticalAlignment="Top" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" Maximum="220" Minimum="100" Value="170" IsSnapToTickEnabled="True" Height="20" TabIndex="2" ValueChanged="scorrimento_slider" TickPlacement="BottomRight" SmallChange="1"/>
+                <xtk:IntegerUpDown x:Name="nud_altezza" HorizontalAlignment="Left" Margin="125,71,0,0" Width="55" VerticalContentAlignment="Center" TabIndex="2" FontSize="12" BorderThickness="1" FontFamily="Segoe UI" Foreground="Black" Height="20" VerticalAlignment="Top" Padding="0" ValueChanged="nud_altezza_ValueChanged"/>
+                <Label x:Name="label_Copy16" Content="Somatotipo:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="cmb_somatotipo" Margin="125,13,10,0" VerticalAlignment="Top" Height="20" TabIndex="3" FontFamily="Segoe UI" Foreground="Black" Padding="4,2,2,2"/>
+                <Label x:Name="lbl_bmi" Content="Valore:&#x9;--&#xA;Stato:&#x9;------------" HorizontalAlignment="Left" Margin="10,126,0,0" VerticalAlignment="Top"/>
+                <Label x:Name="label1_Copy2" Content="Indice di massa corporea" HorizontalAlignment="Left" Margin="10,97,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                <Label x:Name="label1_Copy3" Content="Calcolo metabolismo basale" HorizontalAlignment="Left" Margin="10,173,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+                <Label x:Name="lbl_met" Content="Valore:&#x9;----" HorizontalAlignment="Left" Margin="10,202,0,0" Height="26" VerticalAlignment="Top"/>
+                <Label x:Name="label1_Copy4" Content="Frequenza cardiaca massima" HorizontalAlignment="Left" Margin="10,228,0,-4" VerticalAlignment="Top" FontWeight="Bold"/>
+                <Label x:Name="lbl_fc" Content="FC massima:&#x9;---&#xA;Fondo lento:&#x9;---&#xA;Fondo medio:&#x9;---&#xA;Fondo veloce:&#x9;---" HorizontalAlignment="Left" Margin="10,257,0,-88" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Anamnesi sportiva" Margin="1023,10,0,0" VerticalAlignment="Top" Height="222" HorizontalAlignment="Left" Width="332" Foreground="{DynamicResource BasicBlue}">
+            <Grid>
+                <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Attività sportive praticate:" VerticalAlignment="Top" Foreground="Black"/>
+                <Button x:Name="btn_elimina_sport" Content="Elimina" HorizontalAlignment="Right" Margin="0,164,10.2,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btn_aggiungi_sport" Content="Aggiungi" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top" Width="75" Click="btn_aggiungi_elemento_lista"/>
+                <Button x:Name="btn_modifica_sport" Content="Modifica" HorizontalAlignment="Left" Margin="90,164,0,0" VerticalAlignment="Top" Width="75"/>
+                <ListBox x:Name="lbx_sport" Height="130" Margin="10,29,10.2,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Anamnesi alimentare" Margin="686,10,0,0" VerticalAlignment="Top" Height="554" HorizontalAlignment="Left" Width="332" Foreground="{DynamicResource BasicBlue}">
+            <Grid>
+                <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Alimenti comuni" VerticalAlignment="Top" Foreground="Black"/>
+                <Button x:Name="btn_elimina_alimento" Content="Elimina" HorizontalAlignment="Right" Margin="0,143,10.4,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btn_aggiungi_alimento" Content="Aggiungi" HorizontalAlignment="Left" Margin="10,143,0,0" VerticalAlignment="Top" Width="75" Click="btn_aggiungi_elemento_lista"/>
+                <Button x:Name="btn_modifica_alimento" Content="Modifica" HorizontalAlignment="Left" Margin="90,143,0,0" VerticalAlignment="Top" Width="75"/>
+                <ListBox x:Name="lbx_alimenti" Height="109" Margin="10,29,10.4,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="10,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"><Run Text="Intolleranze e"/><Run Text=" "/><Run Text="allergie"/></TextBlock>
+                <Button x:Name="btn_elimina_intolleranza" Content="Elimina" HorizontalAlignment="Right" Margin="0,319,10.2,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btn_aggiungi_intolleranza" Content="Aggiungi" HorizontalAlignment="Left" Margin="10,319,0,0" VerticalAlignment="Top" Width="75" Click="btn_aggiungi_elemento_lista"/>
+                <Button x:Name="btn_modifica_intolleranza" Content="Modifica" HorizontalAlignment="Left" Margin="90,319,0,0" VerticalAlignment="Top" Width="75"/>
+                <ListBox x:Name="lbx_intolleranze" Height="109" Margin="10,205,10.2,0" VerticalAlignment="Top"/>
+                <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="10,362,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black" Text="Integratori e supplementi"/>
+                <Button x:Name="btn_elimina_integratore" Content="Elimina" HorizontalAlignment="Right" Margin="0,495,10.2,0" VerticalAlignment="Top" Width="75"/>
+                <Button x:Name="btn_aggiungi_integratore" Content="Aggiungi" HorizontalAlignment="Left" Margin="10,495,0,0" VerticalAlignment="Top" Width="75" Click="btn_aggiungi_elemento_lista"/>
+                <Button x:Name="btn_modifica_integratore" Content="Modifica" HorizontalAlignment="Left" Margin="90,495,0,0" VerticalAlignment="Top" Width="75"/>
+                <ListBox x:Name="lbx_integratori" Height="109" Margin="10,381,10.2,0" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>

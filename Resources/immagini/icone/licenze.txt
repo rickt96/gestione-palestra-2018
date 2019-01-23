@@ -1,0 +1,45 @@
+#icone scaricate da https://www.flaticon.com/
+
+
+# 64 - small
+Group_white.png			[freepick]		https://www.flaticon.com/free-icon/multiple-users-silhouette_33308#term=group&page=1&position=1
+User_white.png			[freepick]		https://www.flaticon.com/free-icon/man-user_74472#term=user&page=1&position=9
+
+
+# 128 - medium
+Add_customer_white.png					https://www.flaticon.com/free-icon/add-user-button_60807#term=add%20user&page=1&position=8
+Add_white.png			[smashicon]		https://www.flaticon.com/free-icon/add_149162#term=add&page=1&position=6
+Back_white.png			[freepik]		https://www.flaticon.com/free-icon/left-arrow-angle_60573#term=back&page=1&position=28
+Bin_white.png			[freepik]		https://www.flaticon.com/free-icon/rubbish-bin_64022#term=delete&page=1&position=7
+Delete_white.png		[freepik]		https://www.flaticon.com/free-icon/delete_32178#term=delete&page=1&position=5
+Edit_white.png			[freepik]		https://www.flaticon.com/free-icon/pencil-edit-button_61456#term=edit&page=1&position=13
+Export_white.png		[google]		https://www.flaticon.com/free-icon/download-button_60721#term=download&page=1&position=17
+File_blue.png			[Smashicon]		https://www.flaticon.com/free-icon/file_149345#term=file&page=1&position=2
+Folder_blue.png			[freepik]		https://www.flaticon.com/free-icon/file-folder_64174
+Home_white.png			[freepik]		https://www.flaticon.com/free-icon/home-page_2144#term=home&page=1&position=9
+Import_white.png		[freepick]		https://www.flaticon.com/free-icon/import_154837#term=import&page=1&position=45
+Login_white.png			[freepik]		https://www.flaticon.com/free-icon/user-silhouette_64096#term=user&page=1&position=13
+Login_black.png
+Login_blue.png
+Logout_white.png		[freepik]		https://www.flaticon.com/free-icon/logout_56805#term=logout&page=1&position=6
+Logout_black.png
+Logout_blue.png
+Message_blue.png		[Freepick]		https://www.flaticon.com/free-icon/black-back-closed-envelope-shape_37572#term=message&page=1&position=27
+Model_white.png			[freepik]		https://www.flaticon.com/free-icon/verified-text-paper_45874#term=test&page=1&position=5
+Print_white.png			[yannick]		https://www.flaticon.com/free-icon/printer_12022#term=print&page=1&position=4
+refresh_white			[basicon]		https://www.flaticon.com/free-icon/refresh-button_61444#term=update&page=1&position=2
+Save_white.png			[freepik]		https://www.flaticon.com/free-icon/save-icon_64082
+Search_white.png		[simpleicon]	https://www.flaticon.com/free-icon/magnifier-tool_34097#term=search&page=1&position=21
+Settings_white.png		[freepik]		https://www.flaticon.com/free-icon/gear_128#term=gear&page=1&position=48
+Settings_blue.png
+Settings_black.png
+Test_white.png			[freepick]		https://www.flaticon.com/free-icon/barbell_742689#term=barbell&page=1&position=2
+Test_blue.png
+Warning_white.png		[freepick]		https://www.flaticon.com/free-icon/attention_95458#term=warning&page=1&position=24
+
+
+# 256 - large
+Message_white.png
+Group_white.png										https://www.flaticon.com/free-icon/multiple-users-silhouette_33308#term=group&page=1&position=1
+Stethoscope_white.png				[freepick]		https://www.flaticon.com/free-icon/doctor-stethoscope_73316#term=doctor&page=1&position=8
+User_white.png

@@ -1,0 +1,40 @@
+﻿<Window
+        x:Class="GestionePalestra.WindowAccesso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionePalestra"
+    
+        mc:Ignorable="d" Height="254.332" Width="516.333" ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen" WindowStyle="SingleBorderWindow" Title="Login">
+
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="White" Offset="1"/>
+            <GradientStop Color="White"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
+    <Grid>
+        <!-- header -->
+
+        <!-- controlli login -->
+        <PasswordBox x:Name="pwb_pw" Margin="279,101,24.2,0" VerticalAlignment="Top" FontSize="14" Height="22" TabIndex="1" PasswordChar="●" GotFocus="Text_GotFocus" Password="password" VerticalContentAlignment="Center"/>
+        <ComboBox x:Name="cmb_user" Margin="279,54,24.2,0" VerticalAlignment="Top" SelectedIndex="0" SelectionChanged="cmb_user_SelectionChanged" Height="22"/>
+        <Button x:Name="btn_login" Style="{StaticResource standardButton}" Click="btn_login_Click" IsDefault="True" Margin="0,0,25,20" Height="26" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="128">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteLogin.png" Height="16" Width="16"/>
+                <TextBlock Text="ACCEDI" Margin="5,0,0,0"/>
+            </StackPanel>
+        </Button>
+        <Ellipse Margin="25,35,0,0" Stroke="{DynamicResource BasicGray}" StrokeThickness="2" Height="130" VerticalAlignment="Top" HorizontalAlignment="Left" Width="130">
+            <Ellipse.Fill>
+                <ImageBrush x:Name="img_user" Stretch="UniformToFill" ImageSource="/Gestione Palestra;component/Resources/Icons/BlueLogin.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Label Content="Istruttore" HorizontalAlignment="Left" Margin="189,54,0,0" VerticalAlignment="Top"/>
+        <Label Content="Password" HorizontalAlignment="Left" Margin="189,101,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

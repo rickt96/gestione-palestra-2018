@@ -1,0 +1,56 @@
+﻿<Window x:Class="GestionePalestra.WindowTipi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionePalestra"
+        mc:Ignorable="d"
+        Title="Definizione tipi" Height="320.833" Width="645" Loaded="Window_Loaded">
+    <Grid>
+        <GroupBox Margin="10">
+            <GroupBox.Header>
+                <Label Content="Tipi" Style="{StaticResource GroupBoxLabel}"/>
+            </GroupBox.Header>
+            <Grid Margin="0,0,0,0">
+                <Label Content="Seleziona tipo:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <DataGrid x:Name="dg_tipi" Margin="10,41,10,35" CellEditEnding="dg_tipi_CellEditEnding" AutoGenerateColumns="False" Background="White">
+                    <DataGrid.VerticalGridLinesBrush>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                    </DataGrid.VerticalGridLinesBrush>
+                    <DataGrid.HorizontalGridLinesBrush>
+                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                    </DataGrid.HorizontalGridLinesBrush>
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Valore" Binding="{Binding Valore}"/>
+                        <DataGridTextColumn Header="Descrizione" Binding="{Binding Descrizione}"/>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Style="{StaticResource standardButton}" Click="btn_salva_Click"  Width="80">Salva</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                        <DataGridTemplateColumn>
+                            <DataGridTemplateColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Style="{StaticResource standardButton}" Click="btn_elimina_Click" Width="80">Elimina</Button>
+                                </DataTemplate>
+                            </DataGridTemplateColumn.CellTemplate>
+                        </DataGridTemplateColumn>
+                    </DataGrid.Columns>
+                </DataGrid>
+                <ComboBox x:Name="cmb_sel_tipo" HorizontalAlignment="Left" Margin="106,14,0,0" VerticalAlignment="Top" Width="140" Height="20" Padding="6,0,5,0" VerticalContentAlignment="Center" SelectionChanged="cmb_sel_tipo_SelectionChanged">
+                    <ComboBox.Items>
+                        <ComboBoxItem Content="Lifestyle"/>
+                        <ComboBoxItem Content="Obiettivi allenamento"/>
+                        <ComboBoxItem Content="Tipologie avviso"/>
+                        <ComboBoxItem Content="Stati cliente"/>
+                    </ComboBox.Items>
+                </ComboBox>
+                <Button x:Name="btn_salva" Content="Salva modifiche" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="120" Click="btn_salva_Click" Style="{DynamicResource standardButton}"/>
+                <Button x:Name="btn_elimina" Content="Elimina" HorizontalAlignment="Right" Margin="0,0,140,10" VerticalAlignment="Bottom" Width="80" Click="btn_elimina_Click" Style="{DynamicResource standardButton}"/>
+            </Grid>
+        </GroupBox>
+
+    </Grid>
+</Window>

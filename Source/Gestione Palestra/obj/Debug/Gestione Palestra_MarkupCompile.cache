@@ -1,0 +1,20 @@
+﻿Gestione Palestra
+
+
+winexe
+C#
+.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\
+GestionePalestra
+none
+false
+DEBUG;TRACE
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\App.xaml
+431619127369
+1-1703920275
+51-681041949
+33-1440264438
+UserControls\ControlAvviso.xaml;UserControls\ControlCategoria.xaml;UserControls\ControlElementoDiario.xaml;UserControls\ControlEsercizi.xaml;UserControls\ControlEsercizioScheda.xaml;UserControls\ControlScheda.xaml;Pages\PageGestioneAnamnesi.xaml;Pages\PageGestioneAvvisi.xaml;Pages\PageGestioneClienti.xaml;Pages\PageGestioneEsercizi.xaml;Pages\PageGestioneIstruttori.xaml;Pages\PageGestioneSchede.xaml;Pages\PageHome.xaml;Pages\PageImpostazioni.xaml;Resources\Colors.xaml;Resources\Styles.xaml;Windows\WindowAccesso.xaml;Windows\WindowAvviso.xaml;Windows\WindowCheck.xaml;Windows\WindowConnessione.xaml;Windows\WindowEsercizioSeduta.xaml;Windows\WindowGestionePermessi.xaml;Windows\WindowInserisciIstruttore.xaml;Windows\WindowNotifiche.xaml;Windows\WindowCredenziali.xaml;Windows\WindowDiarioAnnotazioni.xaml;Windows\WindowEsercizio.xaml;Windows\WindowInserisciUtente.xaml;Windows\MainWindow.xaml;Windows\WindowAnamnesi.xaml;Windows\WindowMostraAvviso.xaml;Windows\WindowPannelloIstruttore.xaml;Windows\WindowRicercaAvanzata.xaml;Windows\WindowSchedaAllenamento.xaml;Windows\WindowSchedaUtente.xaml;Windows\WindowSelezioneCliente.xaml;Windows\WindowSelezioneEsercizio.xaml;Windows\WindowSelezioneModelli.xaml;Windows\WindowStampa.xaml;Windows\WindowSysUtility.xaml;Windows\WindowTest.xaml;Windows\WindowTestCliente.xaml;Windows\WindowTipi.xaml;
+
+False
+

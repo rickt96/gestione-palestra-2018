@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="GestionePalestra.ControlEsercizioScheda"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:GestionePalestra"
+             mc:Ignorable="d" Background="#FF1A70B3" Height="90" Width="445" MinWidth="445" Loaded="UserControl_Loaded">
+    <Grid>
+        <Grid Margin="1" Background="#FFE2E2E2">
+            <Grid x:Name="grid_img" HorizontalAlignment="Left" Margin="5,5,0,5" Width="77" Background="White"/>
+            <Label x:Name="lbl_nome" Content="Inclinazioni laterali al cavo basso" HorizontalAlignment="Left" Margin="95,5,0,0" VerticalAlignment="Top" Width="211" Padding="3" Background="White" VerticalContentAlignment="Center" BorderThickness="1,0,0,0" BorderBrush="#FF1A70B3"/>
+            <Label x:Name="lbl_categoria" Content="deltoidi - trapezio" Margin="311,5,0,0" VerticalAlignment="Top" Padding="3" HorizontalContentAlignment="Center" Background="White" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="116" BorderThickness="1,0,0,0" BorderBrush="#FF1A70B3"/>
+            <Label x:Name="lbl_set" Content="5 * 5 - 3 neg." HorizontalAlignment="Left" Margin="95,32,0,0" VerticalAlignment="Top" Width="92" Padding="3" Background="White" VerticalContentAlignment="Center" BorderThickness="1,0,0,0" BorderBrush="#FF1A70B3" HorizontalContentAlignment="Center"/>
+            <Label x:Name="lbl_recupero" Content="1' 30&quot;" HorizontalAlignment="Left" Margin="249,32,0,0" VerticalAlignment="Top" Width="57" Padding="3" Background="White" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="1,0,0,0" BorderBrush="#FF1A70B3"/>
+            <Label x:Name="lbl_tipo" Content="----" Margin="311,32,0,0" VerticalAlignment="Top" Padding="3" HorizontalContentAlignment="Center" Background="White" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="116" BorderThickness="1,0,0,0" BorderBrush="#FF1A70B3"/>
+            <Label x:Name="lbl_note" Content="" Margin="95,59,0,0" VerticalAlignment="Top" Padding="3" Background="White" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="332" BorderThickness="1,0,0,0" BorderBrush="#FF1A70B3"/>
+            <Label x:Name="lbl_ordine" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="17" Width="17" Padding="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF1A70B3" Foreground="White" FontSize="11"/>
+            <Label x:Name="lbl_carico" Content="150kg" HorizontalAlignment="Left" Margin="192,32,0,0" VerticalAlignment="Top" Width="52" Padding="3" Background="White" VerticalContentAlignment="Center" BorderThickness="1,0,0,0" BorderBrush="#FF1A70B3" HorizontalContentAlignment="Center"/>
+        </Grid>
+
+    </Grid>
+</UserControl>

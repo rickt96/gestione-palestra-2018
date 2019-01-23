@@ -1,0 +1,40 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:GestionePalestra"
+      xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" x:Class="GestionePalestra.Pages.PageGestioneSchede"
+      mc:Ignorable="d" 
+      d:DesignHeight="629.873" d:DesignWidth="895.551"
+      Title="PageGestioneSchede" Loaded="Page_Loaded" SizeChanged="Page_SizeChanged">
+    <Grid Background="White">
+        <Button x:Name="btn_modifica_categoria" Style="{StaticResource standardButton}" Content="Rinomina" Margin="105,0,0,37" VerticalAlignment="Bottom" ToolTip="modifica categoria" FontFamily="Segoe UI Semibold" Foreground="White" Height="26" HorizontalAlignment="Left" Width="80" FontSize="14" Click="btn_modifica_categoria_Click"/>
+        <Button x:Name="btn_aggiungi_categoria" Style="{StaticResource standardButton}" Content="Aggiungi" Margin="10,0,0,37" VerticalAlignment="Bottom" ToolTip="Crea una nuova categoria" FontFamily="Segoe UI Semibold" Height="26" HorizontalAlignment="Left" Width="90" FontSize="14" Click="btn_aggiungi_categoria_Click"/>
+        <Button x:Name="btn_elimina" Style="{StaticResource standardButton}" Content="Elimina" Margin="0,0,10,37" VerticalAlignment="Bottom" ToolTip="Elimina l'esercizio selezionato" FontFamily="Segoe UI Semibold" Foreground="White" Height="26" HorizontalAlignment="Right" FontSize="14" Click="btn_elimina_Click" Width="90"/>
+        <ListBox x:Name="lbx_categorie" BorderThickness="1" HorizontalAlignment="Left" Margin="10,86,0,68" Width="270" ScrollViewer.HorizontalScrollBarVisibility="Disabled" SelectionChanged="lbx_categorie_SelectionChanged" BorderBrush="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}"/>
+        <Button x:Name="btn_modifica" Style="{StaticResource standardButton}" Content="Modifica" Margin="0,0,105,37" VerticalAlignment="Bottom" ToolTip="Modifica l'esercizio" FontFamily="Segoe UI Semibold" Foreground="White" Height="26" HorizontalAlignment="Right" FontSize="14" Click="btn_modifica_Click" Width="90"/>
+        <Button x:Name="btn_inserisci" Style="{StaticResource standardButton}" Content="Inserisci" Margin="0,0,200,37" VerticalAlignment="Bottom" ToolTip="Aggiungi un nuovo esercizio" FontFamily="Segoe UI Semibold" Foreground="White" Height="26" HorizontalAlignment="Right" FontSize="14" Click="btn_inserisci_Click" Width="90"/>
+        <Button x:Name="btn_elimina_categoria" Style="{StaticResource standardButton}" Content="Elimina" Margin="190,0,0,37" VerticalAlignment="Bottom" ToolTip="elimina categoria" FontFamily="Segoe UI Semibold" Height="26" HorizontalAlignment="Left" Width="90" FontSize="14" Click="btn_elimina_categoria_Click"/>
+        <ScrollViewer x:Name="sv_schede" Margin="285,55,10,68" BorderBrush="White" BorderThickness="1">
+            <ScrollViewer.Background>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+            </ScrollViewer.Background>
+            <WrapPanel x:Name="wrp_schede" Height="338" Width="305" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </ScrollViewer>
+        <xctk:WatermarkTextBox x:Name="txt_cerca_esercizi" Margin="10,55,0,0" TextWrapping="Wrap" Watermark="cerca scheda..." Padding="3,0" HorizontalAlignment="Left" Width="270" FontSize="14" PreviewKeyDown="txt_cerca_esercizi_PreviewKeyDown" Height="26" VerticalAlignment="Top" VerticalContentAlignment="Center" IsEnabled="False">
+            <xctk:WatermarkTextBox.BorderBrush>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+            </xctk:WatermarkTextBox.BorderBrush>
+        </xctk:WatermarkTextBox>
+        <StatusBar Background="{DynamicResource BasicGray}" Height="25" VerticalAlignment="Bottom" BorderThickness="0,1,0,0" BorderBrush="{DynamicResource BasicBlue}">
+            <TextBlock x:Name="txt_cat_count" Text="-- categorie" Foreground="Black"/>
+            <Separator Width="1" HorizontalAlignment="Left" BorderBrush="{DynamicResource BasicBlue}" Background="{DynamicResource BasicBlue}"/>
+            <TextBlock x:Name="txt_es_count" Foreground="Black"><Run Text="-- "/><Run Text="schede"/></TextBlock>
+        </StatusBar>
+        <Label Content="Gestione schede allenamenti" Style="{StaticResource HeaderLabel}" HorizontalAlignment="Left" Margin="47,10,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_indietro" Style="{StaticResource standardButton}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="32" Height="32" Padding="4" Click="btn_indietro_Click">
+            <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteBack2.png"/>
+        </Button>
+    </Grid>
+</Page>

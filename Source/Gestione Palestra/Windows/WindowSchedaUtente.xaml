@@ -1,0 +1,221 @@
+﻿<Window x:Class="GestionePalestra.WindowSchedaUtente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionePalestra"
+        mc:Ignorable="d"
+        Height="729.2"
+        Width="868.067"
+        ResizeMode="NoResize"
+        Loaded="Window_Loaded" Title="Scheda del cliente" BorderThickness="1" WindowStyle="ThreeDBorderWindow">
+
+    <Window.Background>
+        <SolidColorBrush Color="White"/>
+    </Window.Background>
+
+    <Window.BorderBrush>
+        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+    </Window.BorderBrush>
+
+    <Grid>
+        <Grid Background="{StaticResource BasicGray}" Height="48" VerticalAlignment="Bottom" Margin="0,0,0.2,0.2">
+            <Button x:Name="btn_salva" Style="{StaticResource standardButton}" Click="btn_salva_Click" Margin="0,10,10,10" HorizontalAlignment="Right" Width="160">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteSave.png" Height="14" Width="14"/>
+                    <TextBlock Margin="5,0,0,0"><Run Text="Salva"/><Run Text=" modifiche"/></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btn_elimina" Style="{StaticResource standardButton}" Click="btn_elimina_Click" Margin="0,10,180,10" HorizontalAlignment="Right" Width="160">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteDelete.png" Height="14" Width="14"/>
+                    <TextBlock Text="Elimina cliente" Margin="5,0,0,0" Foreground="White"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <TabControl Margin="10,286,0,0" Height="356" VerticalAlignment="Top" HorizontalAlignment="Left" Width="833" BorderBrush="#FFACACAC" BorderThickness="1">
+            <TabItem Header="Anamnesi" Margin="-2,-2,-2,0">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="678"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="dg_anamnesi" Margin="10,44,10,10" BorderThickness="1" Background="White" Foreground="Black" IsReadOnly="True" SelectionMode="Single" Grid.Column="1" GridLinesVisibility="All" BorderBrush="#FFB9B9B9">
+                        <DataGrid.HorizontalGridLinesBrush>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                        </DataGrid.HorizontalGridLinesBrush>
+                        <DataGrid.VerticalGridLinesBrush>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                        </DataGrid.VerticalGridLinesBrush>
+                    </DataGrid>
+                    <Button x:Name="btn_refresh_anamnesi" Content="Aggiorna" Margin="12,0,17,10" VerticalAlignment="Bottom" ToolTip="aggiorna l'elenco" IsEnabled="False" Click="btn_refresh_anamnesi_Click" Height="25"/>
+                    <Button x:Name="btn_elimina_anamnesi" Content="Elimina" Margin="10,104,10,0" VerticalAlignment="Top" ToolTip="elimina la namnesi" Click="btn_elimina_anamnesi_Click" Height="25"/>
+                    <Button x:Name="btn_modifica_anamnesi" Content="Modifica" Margin="10,74,10,0" VerticalAlignment="Top" ToolTip="modifica la anamnesi selezionata" Click="btn_modifica_anamnesi_Click" Height="25"/>
+                    <Button x:Name="btn_nuova_anamnesi" Content="Aggiungi" Margin="10,44,10,0" VerticalAlignment="Top" ToolTip="aggiungi una nuova anamnesi" Click="btn_nuova_anamnesi_Click" Height="25"/>
+                    <Button x:Name="btn_agg_anamnesi_Copy" Content="Stampa" Margin="12,0,17,40" VerticalAlignment="Bottom" ToolTip="stampa l'anamnesi selezionata" IsEnabled="False" Height="25"/>
+                    <Label Content="Elenco delle anamnesi registrate per il cliente." Margin="10,10,10,0" VerticalAlignment="Top" Height="29" Grid.ColumnSpan="2" FontSize="14"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Test carichi" Margin="-2,-2,-2,0">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="dg_test" Margin="10,44,10,10" Background="White" Foreground="Black" IsReadOnly="True" MouseDoubleClick="dg_test_MouseDoubleClick" SelectionMode="Single" BorderThickness="1" Grid.Column="1" GridLinesVisibility="All" BorderBrush="#FFB9B9B9">
+                        <DataGrid.HorizontalGridLinesBrush>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                        </DataGrid.HorizontalGridLinesBrush>
+                        <DataGrid.VerticalGridLinesBrush>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                        </DataGrid.VerticalGridLinesBrush>
+                    </DataGrid>
+                    <Button x:Name="btn_aggiorna_test" Content="Aggiorna elenco" Margin="10,0,10,10" VerticalAlignment="Bottom" TabIndex="6" ToolTip="aggiorna l'elenco" Height="25" Click="btn_aggiorna_test_Click" FontSize="10" FontFamily="Segoe UI"/>
+                    <Button x:Name="btn_inserisci_test" Content="Inserisci" Margin="10,44,10,0" VerticalAlignment="Top" FontSize="10" TabIndex="6" ToolTip="aggiungi un nuovo test" Height="25" FontFamily="Segoe UI" Click="btn_inserisci_test_Click"/>
+                    <Label Content="Storico dei test sui carichi effettuati. Selezionando un elemento verra visualizzato il grafico dei progressi" Margin="10,10,10,0" VerticalAlignment="Top" FontSize="14" Grid.ColumnSpan="2" Height="29"/>
+                    <Button x:Name="btn_modifica_test" Content="Modifica" Margin="10,74,10,0" VerticalAlignment="Top" FontSize="10" TabIndex="6" ToolTip="modifica il test selezionato" Click="btn_modifica_test_Click" Height="25" FontFamily="Segoe UI" RenderTransformOrigin="0.5,0.5"/>
+                    <Button x:Name="btn_elimina_test" Content="Elimina" Margin="10,104,10,0" VerticalAlignment="Top" FontSize="10" TabIndex="6" ToolTip="elimina il test selezionato" Click="btn_elimina_test_Click" Height="25" FontFamily="Segoe UI"/>
+                    <Button x:Name="btn_aggiorna_test_Copy" Content="Visualizza grafico" Margin="10,0,10,70" VerticalAlignment="Bottom" TabIndex="6" ToolTip="visualizza il grafico dei progressi" Height="25" Click="btn_aggiorna_test_Click" FontSize="10" FontFamily="Segoe UI" IsEnabled="False"/>
+                    <Button x:Name="btn_aggiorna_test_Copy1" Content="Stampa" Margin="10,0,10,40" VerticalAlignment="Bottom" TabIndex="6" ToolTip="stampa i test selezionati" Height="25" Click="btn_aggiorna_test_Click" FontSize="10" FontFamily="Segoe UI" IsEnabled="False"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Schede" Margin="-2,-2,-2,0">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="dg_schede" Margin="10,44,10,10" BorderThickness="1" Background="White" Foreground="Black" IsReadOnly="True" MouseDoubleClick="dg_test_MouseDoubleClick" SelectionMode="Single" GridLinesVisibility="All" Grid.Column="1" BorderBrush="#FFB9B9B9">
+                        <DataGrid.HorizontalGridLinesBrush>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                        </DataGrid.HorizontalGridLinesBrush>
+                        <DataGrid.VerticalGridLinesBrush>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                        </DataGrid.VerticalGridLinesBrush>
+                    </DataGrid>
+                    <Button x:Name="btn_apri_scheda" Content="Apri scheda" Margin="10,74,10,0" VerticalAlignment="Top" ToolTip="apri la scheda selezionata" Click="btn_apri_scheda_Click" Height="25"/>
+                    <Button Content="Aggiorna" Margin="10,0,10,10" VerticalAlignment="Bottom" ToolTip="stampa l'elenco" IsEnabled="False" Height="25"/>
+                    <Button x:Name="btn_annulla_assegnazione_scheda" Content="Dissocia" Margin="10,104,10,0" VerticalAlignment="Top" ToolTip="rimuovi l'assegnazione della scheda al cliente" Click="btn_annulla_assegnazione_scheda_Click" Height="25"/>
+                    <Button Content="Stampa" Margin="10,0,10,40" VerticalAlignment="Bottom" ToolTip="stampa l'elenco delle anamnesi" IsEnabled="False" Height="25"/>
+                    <Label Content="Elenco delle schede di allenamento effettuate dal cliente." Margin="10,10,11,0" VerticalAlignment="Top" Height="29" Grid.ColumnSpan="2" FontSize="14"/>
+                    <Button x:Name="btn_aggiungi_scheda" Content="Aggiungi" Margin="10,44,10,0" VerticalAlignment="Top" ToolTip="assegna una nuova scheda al cliente" Click="btn_aggiungi_scheda_Click" Height="25"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Documenti" Margin="-2,-2,-2,0">
+                <Grid Background="White">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="113*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btn_aggiorna_file" Content="Aggiorna" Margin="10,0,15,10" VerticalAlignment="Bottom" ToolTip="aggiorna l'elenco" Click="btn_aggiorna_file_Click" Height="25"/>
+                    <Button x:Name="btn_elimina_file" Content="Elimina" Margin="10,104,10,0" VerticalAlignment="Top" ToolTip="elimina il file selezionato" Click="btn_elimina_file_Click" Height="25"/>
+                    <Button x:Name="btn_apri" Content="Visualizza" Margin="10,74,10,0" VerticalAlignment="Top" ToolTip="visualizza il file selezionato" Click="btn_apri_Click" Height="25"/>
+                    <Button x:Name="btn_carica_file" Content="Carica" Margin="10,44,10,0" VerticalAlignment="Top" TabIndex="6" ToolTip="aggiungi un nuovo documento" Click="btn_carica_file_Click" Height="25"/>
+                    <DataGrid x:Name="dg_documenti" Margin="10,44,10,10" Background="White" Foreground="Black" IsReadOnly="True" MouseDoubleClick="dg_test_MouseDoubleClick" SelectionMode="Single" AutoGenerateColumns="False" Grid.Column="1" BorderThickness="1" GridLinesVisibility="All" BorderBrush="#FFB9B9B9">
+                        <DataGrid.HorizontalGridLinesBrush>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                        </DataGrid.HorizontalGridLinesBrush>
+                        <DataGrid.VerticalGridLinesBrush>
+                            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
+                        </DataGrid.VerticalGridLinesBrush>
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Nome" Binding="{Binding NomeCompleto}"/>
+                            <DataGridTextColumn Header="Dimensioni" Binding="{Binding DimensioniToString}"/>
+                            <DataGridTextColumn Header="Data creazione" Binding="{Binding DataCreazione}"/>
+                            <DataGridTextColumn Header="Data inserimento" Binding="{Binding DataInserimento}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Label Content="Carica, visualizza, esporta o elimina i documenti del cliente." Margin="10,10,10,0" VerticalAlignment="Top" FontSize="14" Grid.ColumnSpan="2" Height="29"/>
+                    <Button x:Name="btn_rinomina_file" Content="Rinomina" Margin="10,134,10,0" VerticalAlignment="Top" TabIndex="6" ToolTip="rinomina il file" Click="btn_rinomina_file_Click" Height="25"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Grid Background="White" Margin="10,10,0,429.6" HorizontalAlignment="Left" Width="238">
+            <Grid x:Name="grid_img" Margin="10,10,10,47" Background="{DynamicResource BasicGray}"/>
+            <Button x:Name="btn_carica_immagine" Content="Seleziona" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="106" Click="btn_carica_immagine_Click" ToolTip="carica un'immagine di profilo"/>
+            <Button x:Name="btn_rimuovi_immagine" Content="Rimuovi" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="107" Click="btn_rimuovi_immagine_Click" ToolTip="rimuovi l'immagine corrente"/>
+        </Grid>
+        <Grid Margin="253,10,0,429.6" Background="White" HorizontalAlignment="Left" Width="299">
+            <TextBox x:Name="txt_cognome" Height="20" Margin="100,44,20,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="2" FontSize="12" BorderThickness="1" MaxLength="20" FontFamily="Segoe UI" Foreground="Black">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <TextBox x:Name="txt_cf" Margin="100,168,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" TabIndex="4" FontSize="12" BorderThickness="1" MaxLength="16" CharacterCasing="Upper" FontFamily="Segoe UI" Foreground="Black" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="111">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <ComboBox x:Name="cmb_sesso" Margin="100,76,0,0" VerticalAlignment="Top" Height="20" SelectedIndex="0" TabIndex="3" FontFamily="Segoe UI" Foreground="Black" Padding="4,2,2,2" HorizontalAlignment="Left" Width="75"/>
+            <DatePicker x:Name="dp_data_nasc" Margin="100,104,20,0" TabIndex="6" FontFamily="Segoe UI" Foreground="Black" Height="24" VerticalAlignment="Top" Background="White">
+                <DatePicker.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
+                        <GradientStop Color="#FFA3AEB9" Offset="0"/>
+                        <GradientStop Color="#FF8399A9" Offset="0.375"/>
+                        <GradientStop Color="#FF718597" Offset="0.375"/>
+                        <GradientStop Color="#FFABABAB" Offset="1"/>
+                    </LinearGradientBrush>
+                </DatePicker.BorderBrush>
+            </DatePicker>
+            <TextBox x:Name="txt_citta_nasc" Height="20" VerticalAlignment="Top" BorderBrush="#FFABABAB" TabIndex="5" IsTabStop="True" Background="White" Margin="100,138,20,0"/>
+            <Button x:Name="btn_calcola_cv" Content="Calcola" Margin="0,168,20,0" VerticalAlignment="Top" Click="btn_calcola_cv_Click" ToolTip="calcola il codice fiscale" Height="20" HorizontalAlignment="Right" Width="63"/>
+            <Label Content="Nome" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Cognome" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Sesso" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Data nascita" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Città nascita" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Codice fiscale" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Telefono" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Height="26"/>
+            <TextBox VerticalAlignment="Top" TabIndex="11" TextWrapping="Wrap" PreviewTextInput="ControlloInserimentoNumeri" x:Name="txt_tel" Margin="100,200,20,0" Height="20" FontFamily="Segoe UI" FontSize="12" Foreground="Black" Background="White" BorderBrush="#FFABADB3">
+                <TextBox.SelectionBrush>
+                    <SolidColorBrush
+                        Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                </TextBox.SelectionBrush>
+            </TextBox>
+            <Label Content="Email" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Height="26"/>
+            <TextBox TabIndex="12" x:Name="txt_email" Margin="100,231,20,0" FontFamily="Segoe UI" FontSize="12" Foreground="Black" Background="White" BorderBrush="#FFABADB3" Height="20" VerticalAlignment="Top">
+                <TextBox.SelectionBrush>
+                    <SolidColorBrush
+                        Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                </TextBox.SelectionBrush>
+            </TextBox>
+            <TextBox x:Name="txt_nome" Height="20" Margin="101,14,20,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="1" FontSize="12" BorderThickness="1" MaxLength="20" FontFamily="Segoe UI" Foreground="Black" RenderTransformOrigin="0.5,0.5">
+                <TextBox.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="0.198"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TextBox.RenderTransform>
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+        </Grid>
+        <Grid Background="White" Margin="557,10,0,579.6" HorizontalAlignment="Left" Width="286">
+            <Label Content="Data iscrizione" HorizontalAlignment="Left" Margin="10,10,-2.4,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Stato" HorizontalAlignment="Left" Margin="10,41,0,-1.4" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Istruttore" HorizontalAlignment="Left" Margin="10,72,0,-32.4" VerticalAlignment="Top" Height="26"/>
+            <DatePicker TabIndex="14" x:Name="dp_iscr" Margin="100,11,20,0" FontFamily="Segoe UI" Foreground="Black" BorderBrush="#FFABADB3" Height="24" VerticalAlignment="Top" Background="White"/>
+            <ComboBox x:Name="cmb_stato_cliente" Margin="100,41,20,0" VerticalAlignment="Top" Height="26" SelectedIndex="0"/>
+            <ComboBox x:Name="cmb_istruttore" Margin="100,72,20,0" SelectedIndex="0" Height="23" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="145" Margin="557,123,0,0" VerticalAlignment="Top" Width="286" Background="White">
+            <Label Content="Annotazioni" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26"/>
+            <TextBox x:Name="txt_note" Margin="100,10,20,76" TextWrapping="Wrap" Background="White" FontSize="12" MaxLines="6" AcceptsReturn="True" MaxLength="250" TabIndex="15" FontFamily="Segoe UI" Foreground="Black">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+        </Grid>
+
+    </Grid>
+</Window>
+
+<!--
+pulizia librerie:
+xmls:Controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Input.Toolkit"
+xmlns:xtk="http://schemas.xceed.com/wpf/xaml/toolkit"
+xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
+-->

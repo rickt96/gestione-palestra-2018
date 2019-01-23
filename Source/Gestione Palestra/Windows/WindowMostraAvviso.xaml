@@ -1,0 +1,48 @@
+﻿<Window x:Class="GestionePalestra.WindowMostraAvviso"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GestionePalestra"
+        mc:Ignorable="d"
+        Height="420" Width="450" ResizeMode="NoResize" Loaded="Window_Loaded" Closing="Window_Closing">
+    <Grid>
+        <TextBlock x:Name="txtb_titolo" TextWrapping="Wrap" Text="Titolo" Margin="96,81,54,0" Padding="0" Height="16" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtb_descr" TextWrapping="Wrap" Margin="96,165,54,0" Padding="0" VerticalAlignment="Top"><Run Text="Descrizione del "/><Run Text="messaggio"/></TextBlock>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="20,81,0,0" TextWrapping="Wrap" Text="Titolo:" VerticalAlignment="Top" Width="70" FontFamily="Segoe UI Semibold"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="20,165,0,0" TextWrapping="Wrap" Text="Descrizione:" VerticalAlignment="Top" Width="70" FontFamily="Segoe UI Semibold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,123,0,0" TextWrapping="Wrap" Text="Cliente:" VerticalAlignment="Top" Width="70" FontFamily="Segoe UI Semibold"/>
+        <TextBlock x:Name="txtb_cliente_dest" Margin="96,123,54,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="N"/><Run Text="essun cliente"/><Run Text=" selezionato"/></TextBlock>
+        <TextBlock x:Name="txtb_data" TextWrapping="Wrap" Text="Data" Margin="96,102,54,0" Padding="0" Height="16" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="20,102,0,0" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Width="70" FontFamily="Segoe UI Semibold"/>
+        <TextBlock x:Name="txtb_priorita" TextWrapping="Wrap" Margin="96,144,54,0" Padding="0" Height="16" VerticalAlignment="Top"><Run Text="P"/><Run Text="riorità"/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="20,144,0,0" TextWrapping="Wrap" Text="Priorità:" VerticalAlignment="Top" Width="70" FontFamily="Segoe UI Semibold"/>
+        <Ellipse HorizontalAlignment="Left" Width="45" Margin="10,10,0,0" Height="45" VerticalAlignment="Top">
+            <Ellipse.Stroke>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </Ellipse.Stroke>
+            <Ellipse.Fill>
+                <ImageBrush x:Name="img_profilo" Stretch="UniformToFill" ImageSource="/Gestione Palestra;component/Resources/Icons/BlueLogin.png" />
+            </Ellipse.Fill>
+        </Ellipse>
+        <Label x:Name="lbl_istruttore" Content="Istruttore creatore" Margin="65,10,114,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" VerticalContentAlignment="Center" Height="25" Padding="5,0" FontSize="14" Background="{x:Null}">
+            <Label.Foreground>
+                <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+            </Label.Foreground>
+        </Label>
+        <TextBlock x:Name="txtb_tipologia_data" Margin="65,35,114,0" TextWrapping="Wrap" VerticalAlignment="Top" Padding="5,0,0,0"><Run Text="aggiunto il "/><Run Text="00/00/0000 "/><Run Text="alle "/><Run Text="00:00"/></TextBlock>
+        <Label x:Name="lbl_count_gruppo" Content="0" HorizontalAlignment="Right" Margin="0,18,38,0" Padding="5,0" VerticalContentAlignment="Center" Background="{x:Null}" Foreground="Black" Width="27" HorizontalContentAlignment="Right" FontSize="14" Height="23" VerticalAlignment="Top"/>
+        <Image x:Name="img_visibilita" HorizontalAlignment="Right" Width="23" Source="/Gestione Palestra;component/Resources/Icons/WhiteSmallUser.png" Margin="0,18,10,0" Height="23" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dg_stato_letture" Margin="96,223,10,59" Background="White" IsReadOnly="True" CanUserAddRows="False" CanUserDeleteRows="False" GridLinesVisibility="None"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="20,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="70" FontFamily="Segoe UI Semibold" Text="Destinatari:"/>
+        <Grid x:Name="grid_actions" Background="{StaticResource BasicGray}" Height="42" VerticalAlignment="Bottom">
+            <Button x:Name="btn_conferma_lettura" Style="{StaticResource standardButton}" Click="btn_conferma_lettura_Click" Margin="0,10,10,10" HorizontalAlignment="Right" Width="150">
+                <StackPanel Orientation="Horizontal">
+                    <Image Source="/Gestione Palestra;component/Resources/Icons/WhiteEdit.png" Height="14" Width="14"/>
+                    <TextBlock Text="Conferma lettura" Margin="5,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+    </Grid>
+</Window>

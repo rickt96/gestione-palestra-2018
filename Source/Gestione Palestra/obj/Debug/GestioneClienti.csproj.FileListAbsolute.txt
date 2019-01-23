@@ -1,0 +1,369 @@
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Gestione Palestra.exe.config
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Gestione Palestra.exe
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Gestione Palestra.pdb
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\ControlzEx.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Data.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\MahApps.Metro.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\MySql.Data.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\MySqlBackup.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\Data.pdb
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\ControlzEx.pdb
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\MahApps.Metro.pdb
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\MahApps.Metro.xml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\GestioneClienti.csprojResolveAssemblyReference.cache
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlAvviso.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlCategoria.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlElementoDiario.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlEsercizi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlEsercizioScheda.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlScheda.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneAnamnesi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneAvvisi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneClienti.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneEsercizi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneIstruttori.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneSchede.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageHome.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageImpostazioni.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowAccesso.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowAvviso.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowCheck.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowConnessione.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowEsercizioSeduta.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowGestionePermessi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowInserisciIstruttore.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowNotifiche.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowCredenziali.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowDiarioAnnotazioni.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowEsercizio.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowInserisciUtente.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\MainWindow.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowAnamnesi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowMostraAvviso.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowPannelloIstruttore.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowRicercaAvanzata.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSchedaAllenamento.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSchedaUtente.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSelezioneCliente.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSelezioneEsercizio.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSelezioneModelli.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowStampa.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSysUtility.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowTest.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowTestCliente.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowTipi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\App.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\Gestione Palestra_MarkupCompile.cache
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\Gestione Palestra_MarkupCompile.lref
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\App.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlAvviso.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlCategoria.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlElementoDiario.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlEsercizi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlEsercizioScheda.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\ControlScheda.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneAnamnesi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneAvvisi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneClienti.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneEsercizi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneIstruttori.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageGestioneSchede.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageHome.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\PageImpostazioni.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\RD.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowAccesso.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowAvviso.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowCheck.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowConnessione.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowEsercizioSeduta.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowGestionePermessi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowInserisciIstruttore.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowNotifiche.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowCredenziali.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowDiarioAnnotazioni.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowEsercizio.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowInserisciUtente.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\MainWindow.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowAnamnesi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowMostraAvviso.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowPannelloIstruttore.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowRicercaAvanzata.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSchedaAllenamento.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSchedaUtente.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSelezioneCliente.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSelezioneEsercizio.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSelezioneModelli.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowStampa.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowSysUtility.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowTest.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowTestCliente.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\WindowTipi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\Gestione Palestra.g.resources
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\GestioneClienti.Properties.Resources.resources
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\GestioneClienti.csproj.GenerateResource.Cache
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\GestioneClienti.csproj.CoreCompileInputs.cache
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\Gestione Palestra.exe
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018\Src\Gestione Palestra\obj\Debug\Gestione Palestra.pdb
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlAvviso.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlCategoria.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlElementoDiario.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlEsercizi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlEsercizioScheda.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlScheda.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneAnamnesi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneAvvisi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneClienti.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneEsercizi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneIstruttori.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneSchede.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageHome.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageImpostazioni.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAccesso.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAvviso.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowCheck.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowConnessione.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowEsercizioSeduta.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowGestionePermessi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowInserisciIstruttore.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowNotifiche.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowCredenziali.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowDiarioAnnotazioni.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowEsercizio.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowInserisciUtente.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\MainWindow.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAnamnesi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowMostraAvviso.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowPannelloIstruttore.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowRicercaAvanzata.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSchedaAllenamento.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSchedaUtente.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneCliente.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneEsercizio.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneModelli.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowStampa.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSysUtility.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTest.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTestCliente.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTipi.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\App.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra_Content.g.cs
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra_MarkupCompile.cache
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra_MarkupCompile.lref
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Gestione Palestra.exe.config
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Gestione Palestra.exe
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Gestione Palestra.pdb
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\ControlzEx.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MahApps.Metro.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MySql.Data.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MySqlBackup.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\ControlzEx.pdb
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MahApps.Metro.pdb
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MahApps.Metro.xml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\GestioneClienti.csprojResolveAssemblyReference.cache
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\App.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlAvviso.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlCategoria.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlElementoDiario.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlEsercizi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlEsercizioScheda.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlScheda.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneAnamnesi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneAvvisi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneClienti.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneEsercizi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneIstruttori.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneSchede.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageHome.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageImpostazioni.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Resources\Colors.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Resources\Styles.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAccesso.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAvviso.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowCheck.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowConnessione.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowEsercizioSeduta.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowGestionePermessi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowInserisciIstruttore.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowNotifiche.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowCredenziali.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowDiarioAnnotazioni.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowEsercizio.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowInserisciUtente.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\MainWindow.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAnamnesi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowMostraAvviso.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowPannelloIstruttore.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowRicercaAvanzata.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSchedaAllenamento.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSchedaUtente.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneCliente.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneEsercizio.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneModelli.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowStampa.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSysUtility.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTest.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTestCliente.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTipi.baml
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra.g.resources
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\GestionePalestra.Properties.Resources.resources
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\GestioneClienti.csproj.GenerateResource.Cache
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\GestioneClienti.csproj.CoreCompileInputs.cache
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra.exe
+C:\Users\Riccardo Tassinari\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra.pdb
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Gestione Palestra.exe.config
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Gestione Palestra.exe
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Gestione Palestra.pdb
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\ControlzEx.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MahApps.Metro.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MySql.Data.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MySqlBackup.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.DataGrid.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\ControlzEx.pdb
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MahApps.Metro.pdb
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\MahApps.Metro.xml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\GestioneClienti.csprojResolveAssemblyReference.cache
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlAvviso.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlCategoria.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlElementoDiario.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlEsercizi.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlEsercizioScheda.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlScheda.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneAnamnesi.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneAvvisi.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneClienti.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneEsercizi.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneIstruttori.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneSchede.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageHome.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageImpostazioni.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAccesso.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAvviso.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowCheck.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowConnessione.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowEsercizioSeduta.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowGestionePermessi.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowInserisciIstruttore.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowNotifiche.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowCredenziali.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowDiarioAnnotazioni.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowEsercizio.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowInserisciUtente.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\MainWindow.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAnamnesi.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowMostraAvviso.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowPannelloIstruttore.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowRicercaAvanzata.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSchedaAllenamento.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSchedaUtente.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneCliente.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneEsercizio.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneModelli.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowStampa.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSysUtility.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTest.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTestCliente.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTipi.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\App.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra_Content.g.cs
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra_MarkupCompile.cache
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra_MarkupCompile.lref
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\App.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlAvviso.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlCategoria.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlElementoDiario.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlEsercizi.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlEsercizioScheda.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\UserControls\ControlScheda.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneAnamnesi.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneAvvisi.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneClienti.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneEsercizi.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneIstruttori.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageGestioneSchede.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageHome.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Pages\PageImpostazioni.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Resources\Colors.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Resources\Styles.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAccesso.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAvviso.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowCheck.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowConnessione.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowEsercizioSeduta.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowGestionePermessi.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowInserisciIstruttore.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowNotifiche.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowCredenziali.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowDiarioAnnotazioni.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowEsercizio.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowInserisciUtente.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\MainWindow.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowAnamnesi.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowMostraAvviso.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowPannelloIstruttore.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowRicercaAvanzata.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSchedaAllenamento.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSchedaUtente.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneCliente.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneEsercizio.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSelezioneModelli.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowStampa.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowSysUtility.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTest.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTestCliente.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Windows\WindowTipi.baml
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra.g.resources
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\GestionePalestra.Properties.Resources.resources
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\GestioneClienti.csproj.GenerateResource.Cache
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\GestioneClienti.csproj.CoreCompileInputs.cache
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra.exe
+C:\Users\riccardo\Google Drive\Informatica\Progetti\Gestionale Palestra 2018 [CS]\Src\Gestione Palestra\obj\Debug\Gestione Palestra.pdb
