@@ -1,5 +1,5 @@
 # Gestione Palestra
-Foftware per la gestione degli iscritti del centro fitness, sviluppato come estensione del progetto proposto all'esame di stato 2017.
+Software per la gestione degli iscritti del centro fitness, sviluppato come estensione del progetto proposto all'esame di stato 2017.
 
 ## Feature
  - **Home screen** - Pagina di avvio a schermo intero che consentirà di raggiungere tutte le funzionalità tramite tile button. In alto sarà presente il logo del software, il collegamento alle impostazioni (se autorizzati) ed un riquadro di accesso dell’istruttore contenente l’immagine di profilo.
