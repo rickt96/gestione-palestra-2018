@@ -25,7 +25,7 @@ namespace GestionePalestra
             lbl_header.ToolTip = header;
             lbl_header_2.Content = String.Concat(Enumerable.Repeat("★", difficolta));
             //caricamento imamgine
-            Common.SetGridImage(ref grid_img, FactoryEsercizi.Seleziona(id).Immagine);
+            Common.SetGridImage(ref grid_img, EserciziController.Seleziona(id).Immagine);
         }
         public ControlEsercizi(Esercizio es)
         {

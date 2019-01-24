@@ -39,7 +39,7 @@ namespace GestionePalestra
             cmb_sesso.ItemsSource = Common.Sesso;
 
             //istruttori
-            Common.PopulateComboBox(ref cmb_istruttori, FactoryIstruttore.GetListIstruttori(), "NomeCompleto");
+            Common.PopulateComboBox(ref cmb_istruttori, IstruttoriController.GetListIstruttori(), "NomeCompleto");
 
             //focus controllo
             txt_nome.Focus();
@@ -120,7 +120,7 @@ namespace GestionePalestra
                 return;
 
             //scrittura db
-            int last_id = FactoryCliente.Inserisci(c);
+            int last_id = ClienteController.Inserisci(c);
             if (last_id > 0)
             {
                 Common.LastUpdateClienti = DateTime.Now;

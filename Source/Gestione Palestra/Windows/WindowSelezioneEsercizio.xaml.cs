@@ -44,7 +44,7 @@ namespace GestionePalestra
         /// </summary>
         private void dg_esercizi_Loaded(object sender, RoutedEventArgs e)
         {
-            _eserciziDT = FactoryEsercizi.GetTableEsercizi();
+            _eserciziDT = EserciziController.GetTableEsercizi();
             dg_esercizi.ItemsSource = null;
             dg_esercizi.ItemsSource = _eserciziDT.DefaultView;
         }

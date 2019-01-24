@@ -56,20 +56,20 @@ namespace GestionePalestra
                 case 0:
                     //grp_gruppo.Header = "Messaggi personali";
                     txb_descr.Text = "Elenco dei messaggi personali, visibili solo all'istruttore attivo";
-                    dt = FactoryAvviso.GetAgenda(Session.User.PKIstruttore, where_clause);
+                    dt = AvvisoController.GetAgenda(Session.User.PKIstruttore, where_clause);
                     break;
 
                 case 1:
                     //grp_gruppo.Header = "Cominicazioni pubbliche";
                     txb_descr.Text = "Elenco degli avvisi pubblici, visibili a chi è destinatario";
-                    dt = FactoryAvviso.GetComunicazioni(Session.User.PKIstruttore, where_clause);
+                    dt = AvvisoController.GetComunicazioni(Session.User.PKIstruttore, where_clause);
                     break;
             }
 
             Avviso avv;
             foreach (DataRow dr in dt.Rows)
             {
-                avv = FactoryAvviso.Select(Convert.ToInt16(dr[0]));
+                avv = AvvisoController.Select(Convert.ToInt16(dr[0]));
                 ControlAvviso ca = new ControlAvviso(avv);
                 ca.btn_modifica.Click += control_avviso_update_Click;
                 ca.btn_elimina.Click += control_avviso_update_Click;

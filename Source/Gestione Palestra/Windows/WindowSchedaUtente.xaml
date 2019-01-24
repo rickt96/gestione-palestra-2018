@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionePalestra"
         mc:Ignorable="d"
-        Height="729.2"
-        Width="868.067"
+        Height="749.2"
+        Width="818.401"
         ResizeMode="NoResize"
         Loaded="Window_Loaded" Title="Scheda del cliente" BorderThickness="1" WindowStyle="ThreeDBorderWindow">
 
@@ -33,14 +33,14 @@
                 </StackPanel>
             </Button>
         </Grid>
-        <TabControl Margin="10,286,0,0" Height="356" VerticalAlignment="Top" HorizontalAlignment="Left" Width="833" BorderBrush="#FFACACAC" BorderThickness="1">
+        <TabControl Margin="10,292,10,62" BorderBrush="#FFACACAC" BorderThickness="1">
             <TabItem Header="Anamnesi" Margin="-2,-2,-2,0">
                 <Grid Background="White">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="150"/>
                         <ColumnDefinition Width="678"/>
                     </Grid.ColumnDefinitions>
-                    <DataGrid x:Name="dg_anamnesi" Margin="10,44,10,10" BorderThickness="1" Background="White" Foreground="Black" IsReadOnly="True" SelectionMode="Single" Grid.Column="1" GridLinesVisibility="All" BorderBrush="#FFB9B9B9">
+                    <DataGrid x:Name="dg_anamnesi" Margin="10,44,54,10" BorderThickness="1" Background="White" Foreground="Black" IsReadOnly="True" SelectionMode="Single" Grid.Column="1" GridLinesVisibility="All" BorderBrush="#FFB9B9B9">
                         <DataGrid.HorizontalGridLinesBrush>
                             <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
                         </DataGrid.HorizontalGridLinesBrush>
@@ -53,7 +53,7 @@
                     <Button x:Name="btn_modifica_anamnesi" Content="Modifica" Margin="10,74,10,0" VerticalAlignment="Top" ToolTip="modifica la anamnesi selezionata" Click="btn_modifica_anamnesi_Click" Height="25"/>
                     <Button x:Name="btn_nuova_anamnesi" Content="Aggiungi" Margin="10,44,10,0" VerticalAlignment="Top" ToolTip="aggiungi una nuova anamnesi" Click="btn_nuova_anamnesi_Click" Height="25"/>
                     <Button x:Name="btn_agg_anamnesi_Copy" Content="Stampa" Margin="12,0,17,40" VerticalAlignment="Bottom" ToolTip="stampa l'anamnesi selezionata" IsEnabled="False" Height="25"/>
-                    <Label Content="Elenco delle anamnesi registrate per il cliente." Margin="10,10,10,0" VerticalAlignment="Top" Height="29" Grid.ColumnSpan="2" FontSize="14"/>
+                    <Label Content="Elenco delle anamnesi registrate per il cliente." Margin="10,10,54,0" VerticalAlignment="Top" Height="29" Grid.ColumnSpan="2" FontSize="14"/>
                 </Grid>
             </TabItem>
             <TabItem Header="Test carichi" Margin="-2,-2,-2,0">
@@ -130,24 +130,24 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Grid Background="White" Margin="10,10,0,429.6" HorizontalAlignment="Left" Width="238">
-            <Grid x:Name="grid_img" Margin="10,10,10,47" Background="{DynamicResource BasicGray}"/>
-            <Button x:Name="btn_carica_immagine" Content="Seleziona" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="106" Click="btn_carica_immagine_Click" ToolTip="carica un'immagine di profilo"/>
-            <Button x:Name="btn_rimuovi_immagine" Content="Rimuovi" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="107" Click="btn_rimuovi_immagine_Click" ToolTip="rimuovi l'immagine corrente"/>
+        <Grid Background="White" Margin="10,30,0,0" HorizontalAlignment="Left" Width="190" Height="214" VerticalAlignment="Top">
+            <Grid x:Name="grid_img" Margin="10,10,10,35" Background="{DynamicResource BasicGray}"/>
+            <Button x:Name="btn_carica_immagine" Content="Seleziona" HorizontalAlignment="Left" Margin="10,0,0,10" VerticalAlignment="Bottom" Width="81" Click="btn_carica_immagine_Click" ToolTip="carica un'immagine di profilo"/>
+            <Button x:Name="btn_rimuovi_immagine" Content="Rimuovi" HorizontalAlignment="Right" Margin="0,0,10,10" VerticalAlignment="Bottom" Width="80" Click="btn_rimuovi_immagine_Click" ToolTip="rimuovi l'immagine corrente"/>
         </Grid>
-        <Grid Margin="253,10,0,429.6" Background="White" HorizontalAlignment="Left" Width="299">
-            <TextBox x:Name="txt_cognome" Height="20" Margin="100,44,20,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="2" FontSize="12" BorderThickness="1" MaxLength="20" FontFamily="Segoe UI" Foreground="Black">
+        <Grid Margin="205,30,0,0" Background="White" HorizontalAlignment="Left" Width="299" Height="214" VerticalAlignment="Top">
+            <TextBox x:Name="txt_cognome" Height="20" Margin="115,44,10,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="2" FontSize="12" BorderThickness="1" MaxLength="20" FontFamily="Segoe UI" Foreground="Black" Text="000">
                 <TextBox.BorderBrush>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
                 </TextBox.BorderBrush>
             </TextBox>
-            <TextBox x:Name="txt_cf" Margin="100,168,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" TabIndex="4" FontSize="12" BorderThickness="1" MaxLength="16" CharacterCasing="Upper" FontFamily="Segoe UI" Foreground="Black" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="111">
+            <TextBox x:Name="txt_cf" Margin="115,168,0,0" TextWrapping="Wrap" VerticalContentAlignment="Center" TabIndex="4" FontSize="12" BorderThickness="1" MaxLength="16" CharacterCasing="Upper" FontFamily="Segoe UI" Foreground="Black" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="174" Text="000">
                 <TextBox.BorderBrush>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
                 </TextBox.BorderBrush>
             </TextBox>
-            <ComboBox x:Name="cmb_sesso" Margin="100,76,0,0" VerticalAlignment="Top" Height="20" SelectedIndex="0" TabIndex="3" FontFamily="Segoe UI" Foreground="Black" Padding="4,2,2,2" HorizontalAlignment="Left" Width="75"/>
-            <DatePicker x:Name="dp_data_nasc" Margin="100,104,20,0" TabIndex="6" FontFamily="Segoe UI" Foreground="Black" Height="24" VerticalAlignment="Top" Background="White">
+            <ComboBox x:Name="cmb_sesso" Margin="115,72,0,0" VerticalAlignment="Top" Height="26" SelectedIndex="0" TabIndex="3" FontFamily="Segoe UI" Foreground="Black" Padding="4,2,2,2" HorizontalAlignment="Left" Width="75"/>
+            <DatePicker x:Name="dp_data_nasc" Margin="115,104,20,0" TabIndex="6" FontFamily="Segoe UI" Foreground="Black" Height="24" VerticalAlignment="Top" Background="White">
                 <DatePicker.BorderBrush>
                     <LinearGradientBrush EndPoint="0.5,0" StartPoint="0.5,1">
                         <GradientStop Color="#FFA3AEB9" Offset="0"/>
@@ -157,34 +157,18 @@
                     </LinearGradientBrush>
                 </DatePicker.BorderBrush>
             </DatePicker>
-            <TextBox x:Name="txt_citta_nasc" Height="20" VerticalAlignment="Top" BorderBrush="#FFABABAB" TabIndex="5" IsTabStop="True" Background="White" Margin="100,138,20,0"/>
-            <Button x:Name="btn_calcola_cv" Content="Calcola" Margin="0,168,20,0" VerticalAlignment="Top" Click="btn_calcola_cv_Click" ToolTip="calcola il codice fiscale" Height="20" HorizontalAlignment="Right" Width="63"/>
-            <Label Content="Nome" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26"/>
-            <Label Content="Cognome" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="26"/>
-            <Label Content="Sesso" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="26"/>
-            <Label Content="Data nascita" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Height="26"/>
-            <Label Content="Città nascita" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Height="26"/>
-            <Label Content="Codice fiscale" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Height="26"/>
-            <Label Content="Telefono" HorizontalAlignment="Left" Margin="10,196,0,0" VerticalAlignment="Top" Height="26"/>
-            <TextBox VerticalAlignment="Top" TabIndex="11" TextWrapping="Wrap" PreviewTextInput="ControlloInserimentoNumeri" x:Name="txt_tel" Margin="100,200,20,0" Height="20" FontFamily="Segoe UI" FontSize="12" Foreground="Black" Background="White" BorderBrush="#FFABADB3">
-                <TextBox.SelectionBrush>
-                    <SolidColorBrush
-                        Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-                </TextBox.SelectionBrush>
-            </TextBox>
-            <Label Content="Email" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Height="26"/>
-            <TextBox TabIndex="12" x:Name="txt_email" Margin="100,231,20,0" FontFamily="Segoe UI" FontSize="12" Foreground="Black" Background="White" BorderBrush="#FFABADB3" Height="20" VerticalAlignment="Top">
-                <TextBox.SelectionBrush>
-                    <SolidColorBrush
-                        Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
-                </TextBox.SelectionBrush>
-            </TextBox>
-            <TextBox x:Name="txt_nome" Height="20" Margin="101,14,20,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="1" FontSize="12" BorderThickness="1" MaxLength="20" FontFamily="Segoe UI" Foreground="Black" RenderTransformOrigin="0.5,0.5">
+            <TextBox x:Name="txt_citta_nasc" Height="20" VerticalAlignment="Top" BorderBrush="#FFABABAB" TabIndex="5" IsTabStop="True" Background="White" Margin="115,138,10,0" Text="000"/>
+            <Label Content="Cognome:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Sesso:"  Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Data di nascita:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Città di nascita:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Codice fiscale:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Height="26"/>
+            <TextBox x:Name="txt_nome" Height="20" Margin="116,14,10,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="1" FontSize="12" BorderThickness="1" MaxLength="20" FontFamily="Segoe UI" Foreground="Black" RenderTransformOrigin="0.5,0.5" Text="000">
                 <TextBox.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="0.198"/>
+                        <SkewTransform AngleY="0.035"/>
+                        <RotateTransform Angle="0.181"/>
                         <TranslateTransform/>
                     </TransformGroup>
                 </TextBox.RenderTransform>
@@ -192,23 +176,38 @@
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
                 </TextBox.BorderBrush>
             </TextBox>
+            <Label Content="Nome:" Style="{StaticResource FormLabel}" Margin="10,10,189,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
         </Grid>
-        <Grid Background="White" Margin="557,10,0,579.6" HorizontalAlignment="Left" Width="286">
-            <Label Content="Data iscrizione" HorizontalAlignment="Left" Margin="10,10,-2.4,0" VerticalAlignment="Top" Height="26"/>
-            <Label Content="Stato" HorizontalAlignment="Left" Margin="10,41,0,-1.4" VerticalAlignment="Top" Height="26"/>
-            <Label Content="Istruttore" HorizontalAlignment="Left" Margin="10,72,0,-32.4" VerticalAlignment="Top" Height="26"/>
-            <DatePicker TabIndex="14" x:Name="dp_iscr" Margin="100,11,20,0" FontFamily="Segoe UI" Foreground="Black" BorderBrush="#FFABADB3" Height="24" VerticalAlignment="Top" Background="White"/>
-            <ComboBox x:Name="cmb_stato_cliente" Margin="100,41,20,0" VerticalAlignment="Top" Height="26" SelectedIndex="0"/>
-            <ComboBox x:Name="cmb_istruttore" Margin="100,72,20,0" SelectedIndex="0" Height="23" VerticalAlignment="Top"/>
-        </Grid>
-        <Grid HorizontalAlignment="Left" Height="145" Margin="557,123,0,0" VerticalAlignment="Top" Width="286" Background="White">
-            <Label Content="Annotazioni" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26"/>
-            <TextBox x:Name="txt_note" Margin="100,10,20,76" TextWrapping="Wrap" Background="White" FontSize="12" MaxLines="6" AcceptsReturn="True" MaxLength="250" TabIndex="15" FontFamily="Segoe UI" Foreground="Black">
+        <Grid Background="White" Margin="509,30,0,474" HorizontalAlignment="Left" Width="286">
+            <Label Content="Data iscrizione:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Stato:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top" Height="26"/>
+            <Label Content="Istruttore:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,134,0,0" VerticalAlignment="Top" Height="26"/>
+            <DatePicker TabIndex="14" x:Name="dp_iscr" Margin="115,73,10,0" FontFamily="Segoe UI" Foreground="Black" BorderBrush="#FFABADB3" Height="24" VerticalAlignment="Top" Background="White"/>
+            <ComboBox x:Name="cmb_stato_cliente" Margin="115,103,10,0" VerticalAlignment="Top" Height="26" SelectedIndex="0"/>
+            <ComboBox x:Name="cmb_istruttore" Margin="115,134,10,0" SelectedIndex="0" Height="23" VerticalAlignment="Top"/>
+            <Label Content="Annotazioni:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top" Height="26"/>
+            <TextBox x:Name="txt_note" Margin="115,165,10,0" TextWrapping="Wrap" Background="White" FontSize="12" MaxLines="6" AcceptsReturn="True" MaxLength="250" TabIndex="15" FontFamily="Segoe UI" Foreground="Black" Text="0&#xD;&#xA;0" Height="36" VerticalAlignment="Top">
                 <TextBox.BorderBrush>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
                 </TextBox.BorderBrush>
             </TextBox>
+            <Label Content="Telefono:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="26"/>
+            <TextBox VerticalAlignment="Top" TabIndex="11" TextWrapping="Wrap" PreviewTextInput="ControlloInserimentoNumeri" x:Name="txt_tel" Margin="115,14,10,0" Height="20" FontFamily="Segoe UI" FontSize="12" Foreground="Black" Background="White" BorderBrush="#FFABADB3" Text="000">
+                <TextBox.SelectionBrush>
+                    <SolidColorBrush
+                        Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                </TextBox.SelectionBrush>
+            </TextBox>
+            <Label Content="Email:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top" Height="26"/>
+            <TextBox TabIndex="12" x:Name="txt_email" Margin="115,45,10,0" FontFamily="Segoe UI" FontSize="12" Foreground="Black" Background="White" BorderBrush="#FFABADB3" Height="20" VerticalAlignment="Top" Text="000">
+                <TextBox.SelectionBrush>
+                    <SolidColorBrush
+                        Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}"/>
+                </TextBox.SelectionBrush>
+            </TextBox>
         </Grid>
+        <Label Content="Anagrafica" Style="{StaticResource CategoryLabel}" VerticalAlignment="Top"/>
+        <Label Content="Altri dati" Style="{StaticResource CategoryLabel}" VerticalAlignment="Top" Margin="0,262,0,0"/>
 
     </Grid>
 </Window>

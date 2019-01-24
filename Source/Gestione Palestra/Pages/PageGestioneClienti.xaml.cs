@@ -58,7 +58,7 @@ namespace GestionePalestra.Pages
         /// </summary>
         void RefreshClienti()
         {
-            _clientiDT = FactoryCliente.GetTableClienti("");
+            _clientiDT = ClienteController.GetTableClienti("");
             _clientiDT.CaseSensitive = false;
 
             dg_clienti.ItemsSource = null;
@@ -112,7 +112,7 @@ namespace GestionePalestra.Pages
             if (Message.Confirm(DialogType.delete, caption) == false)
                 return;
 
-            if (FactoryCliente.Elimina(id) > 0)
+            if (ClienteController.Elimina(id) > 0)
             {
                 //FactoryStoricoEventi.Inserisci((int?)null, "Rimosso profilo cliente");
             }

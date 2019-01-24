@@ -62,7 +62,7 @@ namespace GestionePalestra
             a.Svolto = (bool)ckb_svolto.IsChecked;
 
             //salvataggio
-            int res = FactoryAnnotazioni.InsertUpdate(a);
+            int res = AnnotazioniController.InsertUpdate(a);
             lbl_modifiche_sospese.Content = "";
         }
 

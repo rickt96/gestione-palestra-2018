@@ -44,7 +44,7 @@ namespace GestionePalestra
         /// </summary>
         void CaricaEsercizio()
         {
-            e = FactoryEsercizi.Seleziona(e.PKEsercizio);
+            e = EserciziController.Seleziona(e.PKEsercizio);
             if (e != null)
             {
                 //impostazione dati
@@ -111,7 +111,7 @@ namespace GestionePalestra
             this.e.Descrizione = txt_descrizione.Text;
             this.e.Categoria = (cmb_categoria.SelectedIndex > -1) ? (cmb_categoria.SelectedItem as CategoriaEsercizio) : new CategoriaEsercizio();
 
-            if (FactoryEsercizi.InsertUpdate(this.e) > 0)
+            if (EserciziController.InsertUpdate(this.e) > 0)
             {
                 Message.Alert(DialogType.update, "esercizio");
                 this.Close();
@@ -122,7 +122,7 @@ namespace GestionePalestra
         {
             if(Message.Confirm( DialogType.delete, "Esercizio"))
             {
-                if (FactoryEsercizi.Elimina(this.e.PKEsercizio) > 0)
+                if (EserciziController.Elimina(this.e.PKEsercizio) > 0)
                     this.DialogResult = true;
             }
         }

@@ -116,7 +116,7 @@ namespace GestionePalestra.Pages
         {
             //TAB UTENTI
             dg_utenti.ItemsSource = null;
-            dg_utenti.ItemsSource = FactoryIstruttore.GetTableIstruttori(null).DefaultView;
+            dg_utenti.ItemsSource = IstruttoriController.GetTableIstruttori(null).DefaultView;
         }
 
         /// <summary>
@@ -318,7 +318,7 @@ namespace GestionePalestra.Pages
             if (Message.Confirm(DialogType.delete, "istruttori") == false)
                 return;
 
-            if (FactoryIstruttore.Elimina(id) > 0)
+            if (IstruttoriController.Elimina(id) > 0)
                 refreshIstruttori();
         }
 

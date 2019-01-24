@@ -5,40 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GestionePalestra"
         mc:Ignorable="d"
-        Height="360.058" Width="530" ResizeMode="NoResize" Loaded="Window_Loaded" Title="Esercizio">
+        Height="282.558" Width="500" ResizeMode="NoResize" Loaded="Window_Loaded" Title="Esercizio">
     <Grid>
-        <GroupBox Margin="244,10,0,0" VerticalAlignment="Top" Height="250" HorizontalAlignment="Left" Width="260" BorderBrush="#FFD5DFE5" Background="White" Header="Informazioni" Foreground="{DynamicResource BasicBlue}">
-
-            <Grid>
-                <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"><Run Text="Nome esercizio"/><Run Text=":"/></TextBlock>
-                <TextBox x:Name="txt_nome" Height="20" Margin="10,26,10,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="2" FontSize="12" BorderThickness="1" MaxLength="50" FontFamily="Segoe UI" Foreground="Black">
-                    <TextBox.BorderBrush>
-                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
-                    </TextBox.BorderBrush>
-                </TextBox>
-                <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="10,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Foreground="Black"><Run Text="Difficoltà"/><Run Text=":"/></TextBlock>
-                <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="10,147,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Descrizione:" Foreground="Black"/>
-                <TextBox x:Name="txt_descrizione" Margin="10,163,10,0" TextWrapping="Wrap" TabIndex="2" FontSize="12" BorderThickness="1" MaxLength="200" FontFamily="Segoe UI" Foreground="Black" MaxLines="4" Height="42" VerticalAlignment="Top">
-                    <TextBox.BorderBrush>
-                        <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
-                    </TextBox.BorderBrush>
-                </TextBox>
-                <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="10,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="Categoria:" Foreground="Black"/>
-                <ComboBox x:Name="cmb_categoria" HorizontalAlignment="Left" Margin="10,116,0,0" VerticalAlignment="Top" Width="190" SelectedIndex="0"/>
-                <Slider x:Name="sld_difficolta" Margin="10,73,0,0" Maximum="5" Minimum="1" Value="1" AutoToolTipPlacement="TopLeft" SmallChange="1" HorizontalAlignment="Left" Width="190" Height="22" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="0"/>
-            </Grid>
-        </GroupBox>
-        <GroupBox Margin="10,10,0,0" Header="Immagine" VerticalAlignment="Top" Height="250" HorizontalAlignment="Left" Width="212" Background="White" BorderBrush="#FFD5DFE5" Foreground="{DynamicResource BasicBlue}">
-
-            <Grid>
-                <Grid x:Name="grid_img" Margin="10,10,10,35" Background="{DynamicResource BasicGray}"/>
-                <Button VerticalAlignment="Bottom" ToolTip="carica un'immagine" x:Name="btn_carica" Margin="10,0,0,10.4" HorizontalAlignment="Left" Content="Carica.." Click="btn_carica_Click" Width="80"/>
-                <Button ToolTip="Rimuovi l'immagine" x:Name="btn_rimuovi" Margin="0,0,10,10.4" HorizontalAlignment="Right" Content="Rimuovi" Click="btn_rimuovi_Click" VerticalAlignment="Bottom" Width="79"/>
-            </Grid>
-        </GroupBox>
         <Grid Background="{StaticResource BasicGray}" Height="45" VerticalAlignment="Bottom" Margin="0,0,0.2,0.4">
             <Button x:Name="btn_salva" Content="SALVA MODIFICHE" HorizontalAlignment="Right" Margin="0,10,10,10" Padding="10,5" Click="btn_salva_Click"/>
             <Button x:Name="btn_elimina" Content="ELIMINA" HorizontalAlignment="Right" Margin="0,10,135.8,10" Width="75" Padding="10,5" Click="btn_elimina_Click"/>
+        </Grid>
+        <Grid Margin="10,10,0,0" HorizontalAlignment="Left" Width="172" Height="191" VerticalAlignment="Top">
+            <Grid x:Name="grid_img" Margin="10,10,10,35" Background="{DynamicResource BasicGray}"/>
+            <Button VerticalAlignment="Bottom" ToolTip="carica un'immagine" x:Name="btn_carica" Margin="10,0,0,10" HorizontalAlignment="Left" Content="Carica.." Click="btn_carica_Click" Width="68"/>
+            <Button ToolTip="Rimuovi l'immagine" x:Name="btn_rimuovi" Margin="0,0,10,10" HorizontalAlignment="Right" Content="Rimuovi" Click="btn_rimuovi_Click" VerticalAlignment="Bottom" Width="67"/>
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="191" Margin="187,10,0,0" VerticalAlignment="Top" Width="299">
+            <Label Content="Nome esercizio:" Style="{StaticResource FormLabel}" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Label Content="Difficoltà:" Style="{StaticResource ResourceKey=FormLabel}" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+            <Label Content="Categoria:" Style="{StaticResource ResourceKey=FormLabel}" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+            <Label Content="Descrizione:" Style="{StaticResource ResourceKey=FormLabel}" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txt_nome" Height="20" Margin="115,13,10,0" TextWrapping="Wrap" VerticalAlignment="Top" VerticalContentAlignment="Center" TabIndex="2" FontSize="12" BorderThickness="1" MaxLength="50" FontFamily="Segoe UI" Foreground="Black" Text="0">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <TextBox x:Name="txt_descrizione" Margin="115,107,10,0" TextWrapping="Wrap" TabIndex="2" FontSize="12" BorderThickness="1" MaxLength="200" FontFamily="Segoe UI" Foreground="Black" MaxLines="4" Height="42" VerticalAlignment="Top" Text="0&#xD;&#xA;0">
+                <TextBox.BorderBrush>
+                    <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+                </TextBox.BorderBrush>
+            </TextBox>
+            <ComboBox x:Name="cmb_categoria" Margin="115,76,10,0" VerticalAlignment="Top" SelectedIndex="0"/>
+            <Slider x:Name="sld_difficolta" Margin="115,45,10,0" Maximum="5" Minimum="1" Value="1" AutoToolTipPlacement="TopLeft" SmallChange="1" Height="22" VerticalAlignment="Top" VerticalContentAlignment="Center" Padding="0"/>
         </Grid>
 
     </Grid>

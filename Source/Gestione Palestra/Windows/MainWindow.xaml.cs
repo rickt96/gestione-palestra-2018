@@ -156,8 +156,8 @@ namespace GestionePalestra
                 return;
 
             dt_notifiche = new DataTable();
-            dt_notifiche.Merge(FactoryAvviso.GetNotificheAvvisiPersonali(Session.User.PKIstruttore, DateTime.Now, DateTime.Now.AddDays(1)));
-            dt_notifiche.Merge(FactoryAvviso.GetNotificheComunicazioni(Session.User.PKIstruttore, DateTime.Now, DateTime.Now.AddDays(1)));
+            dt_notifiche.Merge(AvvisoController.GetNotificheAvvisiPersonali(Session.User.PKIstruttore, DateTime.Now, DateTime.Now.AddDays(1)));
+            dt_notifiche.Merge(AvvisoController.GetNotificheComunicazioni(Session.User.PKIstruttore, DateTime.Now, DateTime.Now.AddDays(1)));
             
 
             lbl_notifiche.Content = dt_notifiche.Rows.Count;

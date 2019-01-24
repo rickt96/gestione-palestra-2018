@@ -40,7 +40,7 @@ namespace GestionePalestra
 
             //caricamento immagine profilo istruttore
             img_profilo.ImageSource = Common.BitmapFromByte(
-                        FactoryIstruttore.GetByteImage(a.FKIstruttore),
+                        IstruttoriController.GetByteImage(a.FKIstruttore),
                         "BlueLogin.png");
 
             //nome istruttore
@@ -99,7 +99,7 @@ namespace GestionePalestra
 
         string NomeIstruttore()
         {
-            DataTable dt = FactoryIstruttore.SelezionaDT_old(a.FKIstruttore);
+            DataTable dt = IstruttoriController.SelezionaDT_old(a.FKIstruttore);
             string nome = dt.Rows[0][1] + " " + dt.Rows[0][2];
             return nome;
         }
@@ -109,7 +109,7 @@ namespace GestionePalestra
             if (a.FKCliente.HasValue)
             {
                 btn_apri_cliente.Visibility = Visibility.Visible;
-                DataRow c = FactoryCliente.GetCliente(a.FKCliente.Value);
+                DataRow c = ClienteController.GetCliente(a.FKCliente.Value);
                 if(c != null)
                     txtb_cliente_dest.Text = c[1]+" "+c[2];
                 else
@@ -141,7 +141,7 @@ namespace GestionePalestra
         private void btn_elimina_Click(object sender, RoutedEventArgs e)
         {
             if(Message.Confirm(DialogType.delete, caption))
-                FactoryAvviso.Delete(a.PKAvviso);
+                AvvisoController.Delete(a.PKAvviso);
         }
     }
             

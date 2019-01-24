@@ -22,10 +22,10 @@ namespace GestionePalestra
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //caricamento permessi
-            Common.PopulateComboBox(ref cmb_permessi, FactoryLivelliPermessi.GetListPermessi(), "Nome");
+            Common.PopulateComboBox(ref cmb_permessi, LivelliPermessiController.GetListPermessi(), "Nome");
 
             //caricamento istruttore
-            i = FactoryIstruttore.Seleziona(i.PKIstruttore);
+            i = IstruttoriController.Seleziona(i.PKIstruttore);
             if (i != null)
             {
                 lbl_nome.Content = i.NomeCompleto;
@@ -54,7 +54,7 @@ namespace GestionePalestra
             i.FKLivelliPermessi = (cmb_permessi.SelectedItem as LivelloPermesso).PKLivelloPermesso;
 
             //scrittura
-            if (FactoryIstruttore.Modifica(i) > 0)
+            if (IstruttoriController.Modifica(i) > 0)
             {
                 Message.Alert(DialogType.update, caption);
                 this.Close();

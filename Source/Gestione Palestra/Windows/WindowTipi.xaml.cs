@@ -50,10 +50,10 @@ namespace GestionePalestra
             toUpdate = new List<int>();
             switch(cmb_sel_tipo.SelectedIndex)
             {
-                case 0: tipi = FactoryTipi.GetTipi(TipiStati.StiliVita); break;
-                case 1: tipi = FactoryTipi.GetTipi(TipiStati.TipiObiettivi); break;
-                case 2: tipi = FactoryTipi.GetTipi(TipiStati.TipologieAvvisi); break;
-                case 3: tipi = FactoryTipi.GetTipi(TipiStati.StatiCliente); break;
+                case 0: tipi = TipiController.GetTipi(TipiStati.StiliVita); break;
+                case 1: tipi = TipiController.GetTipi(TipiStati.TipiObiettivi); break;
+                case 2: tipi = TipiController.GetTipi(TipiStati.TipologieAvvisi); break;
+                case 3: tipi = TipiController.GetTipi(TipiStati.StatiCliente); break;
                 default: tipi = new List<Tipo>(); break;
             }
 
@@ -78,7 +78,7 @@ namespace GestionePalestra
                 case 3: tabella = "clienti_tipi_stati"; break;
             }
 
-            FactoryTipi.InsertUpdate(tipi[dg_tipi.SelectedIndex], tabella);
+            TipiController.InsertUpdate(tipi[dg_tipi.SelectedIndex], tabella);
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -102,7 +102,7 @@ namespace GestionePalestra
 
 
             if (tipi[dg_tipi.SelectedIndex].PKTipo > 0)
-                FactoryTipi.EliminaTipo(tipi[dg_tipi.SelectedIndex].PKTipo, tabella);
+                TipiController.EliminaTipo(tipi[dg_tipi.SelectedIndex].PKTipo, tabella);
             else
                 tipi.RemoveAt(dg_tipi.SelectedIndex);
             dg_tipi.Items.Refresh();

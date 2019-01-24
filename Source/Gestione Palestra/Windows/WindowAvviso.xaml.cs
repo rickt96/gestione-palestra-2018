@@ -69,16 +69,16 @@ namespace GestionePalestra
             //**************************
 
             //tipologia
-            Common.PopulateComboBox(ref cmb_tipologia, FactoryTipi.GetTipi(TipiStati.TipologieAvvisi), "Valore");
+            Common.PopulateComboBox(ref cmb_tipologia, TipiController.GetTipi(TipiStati.TipologieAvvisi), "Valore");
 
             //data
             dtp_data.Value = DateTime.Now;
 
             //elenco clienti
-            Common.PopulateComboBox(ref cmb_cliente, FactoryCliente.GetListClientiBase(""), "NomeCompleto");
+            Common.PopulateComboBox(ref cmb_cliente, ClienteController.GetListClientiBase(""), "NomeCompleto");
 
             //elenco istruttori - aggiunta colonna per gestire la selezione
-            DtIstruttori = FactoryIstruttore.GetTableIstruttori(Session.User.PKIstruttore);
+            DtIstruttori = IstruttoriController.GetTableIstruttori(Session.User.PKIstruttore);
             DtIstruttori.Columns.Add("Selezionato", typeof(bool));
             DtIstruttori.Columns.Add("DataLettura", typeof(string));
             DtIstruttori.Columns["DataLettura"].AllowDBNull = true;
@@ -108,7 +108,7 @@ namespace GestionePalestra
                 case FormAction.update:
                     Title = "Modifica avviso";
                     btn_salva.ToolTip = "Salva modifica";
-                    a = FactoryAvviso.Select(a.PKAvviso);
+                    a = AvvisoController.Select(a.PKAvviso);
                     if (a != null)
                     {
                         //dati base
@@ -268,11 +268,11 @@ namespace GestionePalestra
             switch (_funzione)
             {
                 case FormAction.insert:
-                    result = FactoryAvviso.insert(a);
+                    result = AvvisoController.insert(a);
                     break;
 
                 case FormAction.update:
-                    result = FactoryAvviso.Update(a);
+                    result = AvvisoController.Update(a);
                     break;
             }
 
@@ -285,7 +285,7 @@ namespace GestionePalestra
             if (_funzione != FormAction.update)
                 return;
 
-            int res = FactoryAvviso.Delete(a.PKAvviso);
+            int res = AvvisoController.Delete(a.PKAvviso);
             if (res > 0)
                 this.Close();
         }

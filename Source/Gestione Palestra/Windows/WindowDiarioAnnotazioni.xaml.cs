@@ -34,7 +34,7 @@ namespace GestionePalestra
         {
             lbx_elementi.IsEnabled = true;
             lbx_elementi.Items.Clear();
-            foreach (Annotazione a in FactoryAnnotazioni.GetAnnotazioni(Session.User.PKIstruttore))
+            foreach (Annotazione a in AnnotazioniController.Select(Session.User.PKIstruttore))
                 lbx_elementi.Items.Add(new ControlElementoDiario(a));
 
             if (lbx_elementi.Items.Count == 0)
@@ -70,7 +70,7 @@ namespace GestionePalestra
             int id = ((ControlElementoDiario)lbx_elementi.SelectedItem).a.PKAnnotazione;
             if (id > 0)
             {
-                int res = FactoryAnnotazioni.Delete(id);
+                int res = AnnotazioniController.Delete(id);
                 if (res > 0)
                     refreshAnnotazioni();
 

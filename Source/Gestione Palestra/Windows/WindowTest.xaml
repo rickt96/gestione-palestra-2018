@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GestionePalestra"
         xmlns:xtk="http://schemas.xceed.com/wpf/xaml/toolkit"
         mc:Ignorable="d"
-        Height="308.4" Width="553.092" ResizeMode="NoResize" Loaded="Window_Loaded">
+        Height="414.249" Width="299.576" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
         <Grid Height="42" VerticalAlignment="Bottom" Background="{DynamicResource BasicGray}">
             <Button x:Name="btn_elimina_test" Style="{StaticResource standardButton}" Click="btn_elimina_test_Click" ToolTip="Rimuovi il test selezionato" Margin="0,10,101.2,10" HorizontalAlignment="Right" Width="90">
@@ -22,14 +22,14 @@
                 </StackPanel>
             </Button>
         </Grid>
-        <Label x:Name="label4" Content="Esercizio:" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmb_esercizi" HorizontalAlignment="Left" Margin="94,24,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0"/>
-        <Label x:Name="label_Copy" Content="Carico (kg):" HorizontalAlignment="Left" Margin="20,82,0,0" VerticalAlignment="Top"/>
-        <xtk:IntegerUpDown x:Name="iud_carico" HorizontalAlignment="Left" Height="22" Margin="94,84,0,0" Text="0" VerticalAlignment="Top" Width="65" VerticalContentAlignment="Center"/>
-        <Label x:Name="label4_Copy" Content="Ripetizioni:" HorizontalAlignment="Left" Margin="20,51,0,0" VerticalAlignment="Top"/>
-        <ComboBox x:Name="cmb_reps" HorizontalAlignment="Left" Margin="94,55,0,0" VerticalAlignment="Top" Width="65" SelectedIndex="0"/>
-        <Button x:Name="btn_calcola_test" Style="{StaticResource standardButton}" Content="Calcola" Margin="20,196,0,0" VerticalAlignment="Top" FontSize="12" TabIndex="6" ToolTip="Modifica le credenziali di acceso al sistema" HorizontalAlignment="Left" Width="92" Height="20" Click="btn_calcola_test_Click"/>
-        <ListView x:Name="lstv" Margin="276,20,21.4,0" Background="White" Height="196" VerticalAlignment="Top" BorderThickness="1">
+        <Label x:Name="label4" Style="{StaticResource FormLabel}" Content="Esercizio:" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmb_esercizi" HorizontalAlignment="Left" Margin="115,34,0,0" VerticalAlignment="Top" Width="150" SelectedIndex="0"/>
+        <Label x:Name="label_Copy" Style="{StaticResource FormLabel}" Content="Carico (kg):" HorizontalAlignment="Left" Margin="10,92,0,0" VerticalAlignment="Top"/>
+        <xtk:IntegerUpDown x:Name="iud_carico" HorizontalAlignment="Left" Height="22" Margin="115,94,0,0" Text="0" VerticalAlignment="Top" Width="65" VerticalContentAlignment="Center"/>
+        <Label x:Name="label4_Copy" Style="{StaticResource FormLabel}" Content="Ripetizioni:" HorizontalAlignment="Left" Margin="10,61,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmb_reps" HorizontalAlignment="Left" Margin="115,66,0,0" VerticalAlignment="Top" Width="65" SelectedIndex="0"/>
+        <Button x:Name="btn_calcola_test" Style="{StaticResource standardButton}" Content="Calcola" Margin="18,131,0,0" VerticalAlignment="Top" FontSize="12" TabIndex="6" ToolTip="Modifica le credenziali di acceso al sistema" HorizontalAlignment="Left" Width="92" Height="20" Click="btn_calcola_test_Click"/>
+        <ListView x:Name="lstv" Margin="10,204,10,57" Background="White" BorderThickness="1">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Reps" DisplayMemberBinding="{Binding Reps}" Width="40"/>
@@ -38,6 +38,8 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Label Content="Impostazioni test" Style="{StaticResource CategoryLabel}" VerticalAlignment="Top"/>
+        <Label Content="Grafico carichi" Style="{StaticResource CategoryLabel}" VerticalAlignment="Top" Margin="0,174,0,0"/>
 
     </Grid>
 </Window>

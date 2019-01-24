@@ -93,10 +93,10 @@ namespace GestionePalestra
             //****************************************
 
             //clienti
-            Common.PopulateComboBox(ref cmb_cliente, FactoryCliente.GetListClientiBase(""), "NomeCompleto");
+            Common.PopulateComboBox(ref cmb_cliente, ClienteController.GetListClientiBase(""), "NomeCompleto");
 
             //categorie
-            Common.PopulateComboBox(ref cmb_categoria_scheda, FactoryCategorieSchede.GetCategorieSchede(), "Nome");
+            Common.PopulateComboBox(ref cmb_categoria_scheda, CategorieSchedeController.GetCategorieSchede(), "Nome");
 
             //frequenza settimanale
             cmb_freq_sett.ItemsSource = Enumerable.Range(1, 7);
@@ -105,7 +105,7 @@ namespace GestionePalestra
             cmb_n_sedute_totale.ItemsSource = Enumerable.Range(1, 31);
 
             //istruttori
-            Common.PopulateComboBox(ref cmb_istruttore, FactoryIstruttore.GetListIstruttori(), "NomeCompleto");
+            Common.PopulateComboBox(ref cmb_istruttore, IstruttoriController.GetListIstruttori(), "NomeCompleto");
 
             //impostazione numero massimo sedute
             max_sedute = cmb_freq_sett.Items.Count-1;
@@ -119,7 +119,7 @@ namespace GestionePalestra
             if (_TipoFunzione == FormAction.update)
             {
                 //caricamento oggetto
-                s = FactorySchede.SelezionaSchedaCompleta(s.PKScheda);
+                s = SchedeController.SelezionaSchedaCompleta(s.PKScheda);
                 if (s != null)
                 {               
                     CaricaDatiBase();       //assegnazione dati base           
@@ -258,7 +258,7 @@ namespace GestionePalestra
             switch (_TipoFunzione)
             {
                 case FormAction.insert:
-                    int last_id = FactorySchede.CreaSchedaCompleta(s);
+                    int last_id = SchedeController.CreaSchedaCompleta(s);
                     if (last_id > 0)
                     {
                         s.PKScheda = last_id;
@@ -271,7 +271,7 @@ namespace GestionePalestra
                     break;
 
                 case FormAction.update:
-                    FactorySchede.ModificaSchedaCompleta(s);
+                    SchedeController.ModificaSchedaCompleta(s);
                     break;
             }
             Message.Alert(DialogType.update, "scheda");
@@ -282,7 +282,7 @@ namespace GestionePalestra
             if (Message.Confirm(DialogType.delete, "scheda") == false)
                 return;
 
-            if (FactorySchede.Elimina(s.PKScheda) > 0)
+            if (SchedeController.Elimina(s.PKScheda) > 0)
                 this.Close();
         }
 

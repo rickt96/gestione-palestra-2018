@@ -33,7 +33,7 @@ namespace GestionePalestra
         void caricaModelli()
         {
             cmb_modelli.ItemsSource = null;
-            cmb_modelli.ItemsSource = FactorySchede.GetTableSchedeModelli().Rows;
+            cmb_modelli.ItemsSource = SchedeController.GetTableSchedeModelli().Rows;
             cmb_modelli.DisplayMemberPath = ".[nome]";
         }
 
@@ -69,7 +69,7 @@ namespace GestionePalestra
         private void cmb_modelli_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int id = Convert.ToInt16(((DataRow)cmb_modelli.SelectedItem)[0]);
-            _sel = FactorySchede.SelezionaSchedaCompleta(id);
+            _sel = SchedeController.SelezionaSchedaCompleta(id);
 
             lbx_sedute.Items.Clear();
             foreach(Seduta sed in _sel.Sedute)

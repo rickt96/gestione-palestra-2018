@@ -72,8 +72,8 @@ namespace GestionePalestra.Pages
             }
 
             //stampa contatori sulla statusbar
-            txt_cat_count.Text = string.Format("{0} categorie", categorie.Count, FactoryEsercizi.NumeroEsercizi());
-            txt_es_count.Text = string.Format("{0} esercizi", FactoryEsercizi.NumeroEsercizi());
+            txt_cat_count.Text = string.Format("{0} categorie", categorie.Count, EserciziController.NumeroEsercizi());
+            txt_es_count.Text = string.Format("{0} esercizi", EserciziController.NumeroEsercizi());
         }
 
 
@@ -148,7 +148,7 @@ namespace GestionePalestra.Pages
                 if (txt_cerca_esercizi.Text != "")
                 {
                     lbx_gruppi.SelectedIndex = -1;
-                    LoadEsercizi(FactoryEsercizi.GetListCercaEsercizi(txt_cerca_esercizi.Text), "'" + txt_cerca_esercizi.Text + "'");
+                    LoadEsercizi(EserciziController.GetListCercaEsercizi(txt_cerca_esercizi.Text), "'" + txt_cerca_esercizi.Text + "'");
                     txt_cerca_esercizi.SelectAll();
                 }
             }
@@ -177,14 +177,14 @@ namespace GestionePalestra.Pages
 
             new WindowEsercizio(id_esercizio, FormAction.update).ShowDialog();
             LoadCategorie();
-            LoadEsercizi(FactoryEsercizi.GetListEserciziCategoria(id_categoria), "la categoria selezionata");
+            LoadEsercizi(EserciziController.GetListEserciziCategoria(id_categoria), "la categoria selezionata");
         }
 
         private void btn_inserisci_Click(object sender, RoutedEventArgs e)
         {
             new WindowEsercizio(id_categoria, FormAction.insert).ShowDialog();
             LoadCategorie();
-            LoadEsercizi(FactoryEsercizi.GetListEserciziCategoria(id_categoria), "la categoria selezionata");
+            LoadEsercizi(EserciziController.GetListEserciziCategoria(id_categoria), "la categoria selezionata");
         }
 
         private void btn_elimina_Click(object sender, RoutedEventArgs e)
@@ -195,10 +195,10 @@ namespace GestionePalestra.Pages
             if (Message.Confirm(DialogType.delete, caption) == false)
                 return;
 
-            if (FactoryEsercizi.Elimina(id_esercizio) > 0)
+            if (EserciziController.Elimina(id_esercizio) > 0)
             {
                 LoadCategorie();
-                LoadEsercizi(FactoryEsercizi.GetListEserciziCategoria(id_categoria), "la categoria selezionata");
+                LoadEsercizi(EserciziController.GetListEserciziCategoria(id_categoria), "la categoria selezionata");
             }
         }
 
@@ -216,7 +216,7 @@ namespace GestionePalestra.Pages
             ControlCategoria cc = ((ControlCategoria)lbx_gruppi.SelectedItem);
             id_esercizio = -1;
             id_categoria = cc.Id;
-            LoadEsercizi(FactoryEsercizi.GetListEserciziCategoria(id_categoria), "la categoria selezionata");
+            LoadEsercizi(EserciziController.GetListEserciziCategoria(id_categoria), "la categoria selezionata");
         }
 
         private void btn_elimina_categoria_Click(object sender, RoutedEventArgs e)

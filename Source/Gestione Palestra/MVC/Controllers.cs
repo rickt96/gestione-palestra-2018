@@ -1,9 +1,8 @@
-﻿using System; using GestionePalestra.MVC;
+﻿using System;
 using System.Collections.Generic;
 using MySql.Data.MySqlClient;
 using System.Data;
 using System.Linq;
-using System.IO;
 using System.Windows.Forms;
 
 namespace GestionePalestra.MVC
@@ -401,6 +400,7 @@ namespace GestionePalestra.MVC
                 return false;
             }
         }
+
         public static bool Restore(string file_path)
         {
             try
@@ -427,61 +427,10 @@ namespace GestionePalestra.MVC
     }
 
 
-    public static class FactorySysLog
-    {
-        public static bool InserisciErrore(Exception ex, string sorgente, int id_istr)
-        {
-            string query = string.Format("INSERT INTO sys_log VALUES(DEFAULT, 'errore', '{0}', '{1}', '{2}', '{3}')", ex.Message, DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss"), sorgente, id_istr);
-            return false;
-        }
-        public static bool InserisciErrore(MySqlException ex)
-        {
-            return false;
-        }
-        public static DataTable ElencoLog()
-        {
-            try
-            {
-                string query =
-                "SELECT * FROM sys_log ORDER BY data DESC";
-                MySqlCommand cmd = new MySqlCommand(query, Database.conn);
-                DataTable dt = new DataTable();
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                da.Fill(dt);
-                return dt;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("impossibile caricare la lista:\n" + ex.Message, "Log", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
-            }
-        }
-        public static DataTable ElencoErrori()
-        {
-            try
-            {
-                string query =
-                "SELECT * FROM sys_log Where tipo = 'errore' ORDER BY data DESC";
-                MySqlCommand cmd = new MySqlCommand(query, Database.conn);
-                DataTable dt = new DataTable();
-                MySqlDataAdapter da = new MySqlDataAdapter(cmd);
-                da.Fill(dt);
-                return dt;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("impossibile caricare la lista:\n" + ex.Message, "Log", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return null;
-            }
-        }
-    }
-
-
-
     //////////////////////////////////////
 
     
-    public static class FactoryAnamnesi
+    public static class AnamnesiController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -593,7 +542,7 @@ namespace GestionePalestra.MVC
 
 
 
-    public static class FactoryAnnotazioni
+    public static class AnnotazioniController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -622,22 +571,12 @@ namespace GestionePalestra.MVC
                 ? Factory.ExecuteNonQuery(cmd)
                 : Convert.ToInt16(Factory.ExecuteScalar(cmd));
         }
-        public static void Modifica_old(Annotazione a)
-        {
-            //MySqlCommand cmd = new MySqlCommand(queries["update"], Database.connessione);
-            //cmd.Parameters.AddWithValue("@id_ann", Factory.SetInt(a.id_annotazione));
-            //cmd.Parameters.AddWithValue("@titolo", Factory.SetString(a.Titolo));
-            //cmd.Parameters.AddWithValue("@testo", Factory.SetString(a.Testo));
-            //cmd.Parameters.AddWithValue("@data", Factory.SetDateTime(a.Data));
-            //cmd.Parameters.AddWithValue("@svolto", Factory.SetBoolean(a.Svolto));
-            //return Factory.ExecuteNonQuery(cmd);
-        }
         public static int Delete(int id_annotazione)
         {
             string q = string.Format(queries["delete"], id_annotazione);
             return (int)Factory.ExecuteNonQuery(q);
         }
-        public static List<Annotazione> GetAnnotazioni(int id_istruttore)
+        public static List<Annotazione> Select(int id_istruttore)
         {
             List<Annotazione> annotazioni = new List<Annotazione>();
             string query = string.Format(queries["select_annotazioni_istruttore"], id_istruttore);
@@ -665,9 +604,10 @@ namespace GestionePalestra.MVC
 
 
     
-    //da rivedere delle cose dove indicato
-    public static class FactoryAvviso
+    public static class AvvisoController
     {
+        //da rivedere delle cose dove indicato
+
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
             { "select",                     "SELECT * FROM avvisi WHERE id_avviso = {0}" },
@@ -900,7 +840,7 @@ namespace GestionePalestra.MVC
 
 
 
-    public static class FactoryCategorieEsercizi
+    public static class CategorieEserciziController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -1000,7 +940,7 @@ namespace GestionePalestra.MVC
 
 
     
-    public static class FactoryCategorieSchede
+    public static class CategorieSchedeController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -1096,9 +1036,10 @@ namespace GestionePalestra.MVC
 
 
 
-    //sicuro saltano gabole sulle select del datagrid
-    public static class FactoryCliente
+    public static class ClienteController
     {
+        //sicuro saltano gabole sulle select del datagrid
+
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
             { "select_one",     "SELECT * FROM clienti WHERE id_cliente = {0};" },
@@ -1301,7 +1242,7 @@ namespace GestionePalestra.MVC
 
 
 
-    public static class FactoryEsercizi
+    public static class EserciziController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -1466,14 +1407,14 @@ namespace GestionePalestra.MVC
             e.Difficolta = DBGet.GetInt(dr[2]);
             e.Descrizione = DBGet.GetString(dr[3]);
             e.Immagine = DBGet.GetBytes(dr[4]);
-            e.Categoria = (!dr.IsNull(5)) ? FactoryCategorieEsercizi.Seleziona(Convert.ToInt16(dr[5])) : new CategoriaEsercizio();
+            e.Categoria = (!dr.IsNull(5)) ? CategorieEserciziController.Seleziona(Convert.ToInt16(dr[5])) : new CategoriaEsercizio();
             return e;
         }
     }
 
 
 
-    public static class FactoryIstruttore
+    public static class IstruttoriController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -1633,7 +1574,7 @@ namespace GestionePalestra.MVC
 
 
     
-    public static class FactoryLivelliPermessi
+    public static class LivelliPermessiController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -1731,7 +1672,7 @@ namespace GestionePalestra.MVC
 
 
 
-    public static class FactorySchede
+    public static class SchedeController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -1755,7 +1696,7 @@ namespace GestionePalestra.MVC
                 //caricamento dati scheda
                 scheda = _GetSchedaDati(dt.Rows[0]);
                 //caricamento sedute (dentro carica gia gli esercizi)
-                scheda.Sedute = FactorySedute.GetListSeduteScheda(id_scheda);
+                scheda.Sedute = SeduteController.GetListSeduteScheda(id_scheda);
             }
             return scheda;
 
@@ -1789,9 +1730,9 @@ namespace GestionePalestra.MVC
                     sed.Ordine = sed_ordine;
                     sed.FKScheda = s.PKScheda;                          //assegno alla seduta l'id della scheda
                     if (sed.PKSeduta > 0) {
-                        FactorySedute.Update(sed);                      //se la pk vale piu di 0 si deve aggiornare il record
+                        SeduteController.Update(sed);                      //se la pk vale piu di 0 si deve aggiornare il record
                     } else {
-                        sed.PKSeduta = FactorySedute.Insert(sed);       //altrimenti l'id diventa quello dato dall'insert
+                        sed.PKSeduta = SeduteController.Insert(sed);       //altrimenti l'id diventa quello dato dall'insert
                     }
 
                     if(sed.PKSeduta > 0)                                //Se ha un id valido
@@ -1799,7 +1740,7 @@ namespace GestionePalestra.MVC
                         foreach (EsercizioSeduta es in sed.Esercizi) {
                             es.Ordine = es_ordine;
                             es.FKSeduta = sed.PKSeduta;                 //assegno all'esercizio la fk della seduta
-                            FactoryEserciziSedute.InsertUpdate(es);     //modifica dell'esercizio
+                            EserciziSeduteController.InsertUpdate(es);     //modifica dell'esercizio
                             es_ordine++;
                         }
                     }
@@ -1833,7 +1774,7 @@ namespace GestionePalestra.MVC
             Factory.ExecuteNonQuery(cmd);
 
             // 2. eliminazione vecchie sedute (a cascata gli esercizi) per evitare problemi
-            FactorySedute.DeleteSeduteScheda(s.PKScheda);
+            SeduteController.DeleteSeduteScheda(s.PKScheda);
             
             // 3. reinserimento sedute
             int sed_ordine = 0;
@@ -1841,14 +1782,14 @@ namespace GestionePalestra.MVC
             foreach (Seduta sed in s.Sedute)
             {
                 sed.Ordine = sed_ordine;
-                sed.PKSeduta = FactorySedute.Insert(sed);
+                sed.PKSeduta = SeduteController.Insert(sed);
 
                 // 4. reinserimento esercizi
                 foreach (EsercizioSeduta es in sed.Esercizi)
                 {
                     es.Ordine = es_ordine;
                     es.FKSeduta = sed.PKSeduta;
-                    FactoryEserciziSedute.Insert(es);
+                    EserciziSeduteController.Insert(es);
                     es_ordine++;
                 }
                 sed_ordine++;
@@ -1936,7 +1877,7 @@ namespace GestionePalestra.MVC
 
 
 
-    public static class FactorySedute
+    public static class SeduteController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -1957,7 +1898,7 @@ namespace GestionePalestra.MVC
                 //caricamento seduta
                 s = _GetSeduta(dt.Rows[0]);
                 //caricamento lista esercizi seduta
-                s.Esercizi = FactoryEserciziSedute.GetListEserciziSeduta(s.PKSeduta);
+                s.Esercizi = EserciziSeduteController.GetListEserciziSeduta(s.PKSeduta);
             }   
             return s;
         }
@@ -2022,7 +1963,7 @@ namespace GestionePalestra.MVC
 
 
 
-    public static class FactoryEserciziSedute
+    public static class EserciziSeduteController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -2120,7 +2061,7 @@ namespace GestionePalestra.MVC
             EsercizioSeduta es = new EsercizioSeduta();
             es.PKEsercizioSeduta = Convert.ToInt16(dr[0]);
             es.FKSeduta = Convert.ToInt16(dr[1]);
-            es.Esercizio = FactoryEsercizi.Seleziona(Convert.ToInt16(dr[2]));
+            es.Esercizio = EserciziController.Seleziona(Convert.ToInt16(dr[2]));
             es.Serie = DBGet.GetInt(dr[3]);
             es.Ripetizioni = DBGet.GetString(dr[4]);
             es.Recupero = DBGet.GetTimeSpan(dr[5]);
@@ -2137,37 +2078,7 @@ namespace GestionePalestra.MVC
 
 
 
-    public static class FactoryStoricoEventi
-    {
-        static Dictionary<string, string> queries = new Dictionary<string, string>()
-        {
-            { "insert",             "INSERT INTO log_eventi VALUES(DEFAULT,@data, @id_tab, @nome_tab, @descr, @id_istr); SELECT LAST_INSERT_ID();" },
-            { "select_by_cli_dt",   @"SELECT log_eventi.*, CONCAT(istruttori.nome, ' ',istruttori.cognome) as 'istruttore' 
-                                    FROM log_eventi 
-                                    LEFT JOIN istruttori ON log_eventi.fk_id_istruttore = istruttori.id_istruttore 
-                                    WHERE id_tabella = {0} AND nome_tabella = '{1}' 
-                                    ORDER BY data;"
-            }
-        };
-        public static int Inserisci(int id_oggetto, string nome_tabella, string descrizione, int id_istruttore)
-        {
-            MySqlCommand cmd = new MySqlCommand(queries["insert"], Database.conn);
-            cmd.Parameters.AddWithValue("@data", DateTime.Now);
-            cmd.Parameters.AddWithValue("@id_tab", id_oggetto);
-            cmd.Parameters.AddWithValue("@nome_tab", nome_tabella);
-            cmd.Parameters.AddWithValue("@descr", descrizione);
-            cmd.Parameters.AddWithValue("@id_istr", id_istruttore);
-            return Convert.ToInt16(Factory.ExecuteScalar(cmd));
-        }
-        public static DataTable GetTableAttivitaCliente(int id_cliente)
-        {
-            return Factory.Select(string.Format(queries["select_by_cli_dt"], id_cliente, "clienti"));
-        }
-    }
-
-
-
-    public static class FactoryTest
+    public static class TestController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -2247,7 +2158,7 @@ namespace GestionePalestra.MVC
 
 
     
-    public static class FactoryTipi
+    public static class TipiController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {
@@ -2343,7 +2254,8 @@ namespace GestionePalestra.MVC
     }
 
 
-    public static class FactoryDocumentiClienti
+
+    public static class DocumentiController
     {
         static Dictionary<string, string> queries = new Dictionary<string, string>()
         {

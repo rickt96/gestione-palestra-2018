@@ -24,7 +24,7 @@ namespace GestionePalestra
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //caricamento dataset clienti
-            _clientiDT = FactoryCliente.GetTableClienti("");
+            _clientiDT = ClienteController.GetTableClienti("");
 
             //assegnazione al datagrid
             dg_clienti.ItemsSource = null;

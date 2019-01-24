@@ -211,9 +211,6 @@
     <Compile Include="Windows\WindowInserisciIstruttore.xaml.cs">
       <DependentUpon>WindowInserisciIstruttore.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Windows\WindowNotifiche.xaml.cs">
-      <DependentUpon>WindowNotifiche.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Windows\WindowCredenziali.xaml.cs">
       <DependentUpon>WindowCredenziali.xaml</DependentUpon>
     </Compile>
@@ -261,9 +258,6 @@
     </Compile>
     <Compile Include="Windows\WindowTest.xaml.cs">
       <DependentUpon>WindowTest.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Windows\WindowTestCliente.xaml.cs">
-      <DependentUpon>WindowTestCliente.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\WindowTipi.xaml.cs">
       <DependentUpon>WindowTipi.xaml</DependentUpon>
@@ -360,10 +354,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Windows\WindowNotifiche.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Windows\WindowCredenziali.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -437,10 +427,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Windows\WindowTest.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Windows\WindowTestCliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

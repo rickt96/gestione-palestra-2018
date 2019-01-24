@@ -43,7 +43,7 @@ namespace GestionePalestra
             //
             // 1. caricamento campi
             //
-            Common.PopulateComboBox(ref cmb_esercizi, FactoryEsercizi.GetListEsercizi(), "Nome");
+            Common.PopulateComboBox(ref cmb_esercizi, EserciziController.GetListEsercizi(), "Nome");
             cmb_reps.ItemsSource = Enumerable.Range(1, 40);
 
 
@@ -52,7 +52,7 @@ namespace GestionePalestra
             //
             if(t.PKTest > 0)
             {
-                t = FactoryTest.Seleziona(t.PKTest);
+                t = TestController.Seleziona(t.PKTest);
                 if (t != null)
                 {
                     //selezione esericizio del test corrente
@@ -81,7 +81,7 @@ namespace GestionePalestra
             if (t.PKTest < 1)
                 return;
 
-            if (FactoryTest.Delete(t.PKTest) > 0)
+            if (TestController.Delete(t.PKTest) > 0)
                 this.Close();
         }
 
@@ -96,7 +96,7 @@ namespace GestionePalestra
             t.Carico = iud_carico.Value.Value;
 
             //insert-update
-            if (FactoryTest.InsertUpdate(t) > 0)
+            if (TestController.InsertUpdate(t) > 0)
                 Message.Alert(AlertType.info, "Modifiche inserite", "test");
         }
 

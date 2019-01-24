@@ -71,8 +71,8 @@ namespace GestionePalestra
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //form filling
-            Common.PopulateComboBox(ref cmb_esercizi, FactoryEsercizi.GetListEsercizi(), "Nome");
-            cmb_ripetizioni.ItemsSource = FactoryEserciziSedute.GetListRipetizioniDinstict();
+            Common.PopulateComboBox(ref cmb_esercizi, EserciziController.GetListEsercizi(), "Nome");
+            cmb_ripetizioni.ItemsSource = EserciziSeduteController.GetListRipetizioniDinstict();
 
             //caricamento oggetto
             if(tipoFunzione == FormAction.update)

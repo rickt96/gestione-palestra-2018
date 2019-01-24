@@ -45,28 +45,28 @@ namespace GestionePalestra
         
         void RefreshAnamnesi()
         {
-            _anamnesiDT = FactoryAnamnesi.GetTableAnamnesiCliente(c.PKCliente);
+            _anamnesiDT = AnamnesiController.GetTableAnamnesiCliente(c.PKCliente);
             dg_anamnesi.ItemsSource = null;
             dg_anamnesi.ItemsSource = _anamnesiDT.DefaultView;
         }
 
         void RefreshTest()
         {
-            _testDT = FactoryTest.GetTableTestCliente(c.PKCliente);
+            _testDT = TestController.GetTableTestCliente(c.PKCliente);
             dg_test.ItemsSource = null;
             dg_test.ItemsSource = _testDT.DefaultView;
         }
 
         void RefreshSchede()
         {
-            _schedeDT = FactorySchede.GetTableSchedeCliente(c.PKCliente);
+            _schedeDT = SchedeController.GetTableSchedeCliente(c.PKCliente);
             dg_schede.ItemsSource = null;
             dg_schede.ItemsSource = _schedeDT.DefaultView;
         }
 
         void RefreshDocumenti()
         {
-            _documentiLST = FactoryDocumentiClienti.GetListDocumentiCliente(c.PKCliente);
+            _documentiLST = DocumentiController.GetListDocumentiCliente(c.PKCliente);
             dg_documenti.ItemsSource = null;
             dg_documenti.ItemsSource = _documentiLST;
         }
@@ -85,14 +85,14 @@ namespace GestionePalestra
             cmb_sesso.ItemsSource = Common.Sesso;
 
             //istruttore
-            Common.PopulateComboBox(ref cmb_istruttore, FactoryIstruttore.GetListIstruttori(), "NomeCompleto");
+            Common.PopulateComboBox(ref cmb_istruttore, IstruttoriController.GetListIstruttori(), "NomeCompleto");
 
             //stati cliente
-            Common.PopulateComboBox(ref cmb_stato_cliente, FactoryTipi.GetTipi(TipiStati.StatiCliente), "Valore");
+            Common.PopulateComboBox(ref cmb_stato_cliente, TipiController.GetTipi(TipiStati.StatiCliente), "Valore");
 
 
             //caricamento cliente
-            c = FactoryCliente.Seleziona(c.PKCliente);
+            c = ClienteController.Seleziona(c.PKCliente);
 
             //carica immagine
             Common.SetGridImage(ref grid_img, this.c.Immagine);
@@ -295,7 +295,7 @@ namespace GestionePalestra
             DataRowView dataRow = (DataRowView)dg_anamnesi.SelectedItem;
             int id = Convert.ToInt16(dataRow[0]);
 
-            if (FactoryAnamnesi.Delete(id) > 0)
+            if (AnamnesiController.Delete(id) > 0)
             {
                 //FactoryStoricoEventi.Inserisci(c.PKCliente, "Anamnesi eliminata");
                 RefreshAnamnesi();
@@ -343,7 +343,7 @@ namespace GestionePalestra
         {
             DataRowView dataRow = (DataRowView)dg_schede.SelectedItem;
             int id = Convert.ToInt16(dataRow[0]);
-            Scheda s = FactorySchede.SelezionaSchedaCompleta(id);
+            Scheda s = SchedeController.SelezionaSchedaCompleta(id);
             new WindowStampa(s).ShowDialog();
         }
 
@@ -400,7 +400,7 @@ namespace GestionePalestra
             c.FKIstruttore = (cmb_istruttore.SelectedItem as Istruttore).PKIstruttore;
 
             //Scrittura
-            if (FactoryCliente.Modifica(c) > 0)
+            if (ClienteController.Modifica(c) > 0)
             {
                 //FactoryStoricoEventi.Inserisci(c.PKCliente, "Modifica profilo cliente");
                 Common.LastUpdateClienti = DateTime.Now;
@@ -410,7 +410,7 @@ namespace GestionePalestra
 
         private void btn_elimina_Click(object sender, RoutedEventArgs e)
         {
-            if (FactoryCliente.Elimina(c.PKCliente) > 0)
+            if (ClienteController.Elimina(c.PKCliente) > 0)
             {
                 //FactoryStoricoEventi.Inserisci((int?)null, "Rimosso profilo cliente");
                 Common.LastUpdateClienti = DateTime.Now;
@@ -448,7 +448,7 @@ namespace GestionePalestra
                 dc.FKIstruttore = Session.User.PKIstruttore;
                 dc.FKCliente = c.PKCliente;
 
-                if (FactoryDocumentiClienti.Insert(dc) > 0)
+                if (DocumentiController.Insert(dc) > 0)
                 {
                     RefreshDocumenti();
                     //_documentiLST.Add(dc);
@@ -482,7 +482,7 @@ namespace GestionePalestra
             if (Message.Confirm(DialogType.delete, caption) == true)
             {
                 int id = (dg_documenti.SelectedItem as DocumentoCliente).PKDocumento;
-                if (FactoryDocumentiClienti.Delete(id) > 0)
+                if (DocumentiController.Delete(id) > 0)
                     RefreshDocumenti();
             }
 
@@ -522,7 +522,7 @@ namespace GestionePalestra
                 DataRowView dataRow = (DataRowView)dg_test.SelectedItem;
                 int id = Convert.ToInt16(dataRow[0]);
 
-                if (FactoryTest.Delete(id) > 0)
+                if (TestController.Delete(id) > 0)
                     RefreshTest();
             }
         }
@@ -537,7 +537,7 @@ namespace GestionePalestra
             if (newname != "" && newname != c.NomeFile)
             {
                 c.NomeFile = newname;
-                if (FactoryDocumentiClienti.Rename(c) > 0)
+                if (DocumentiController.Rename(c) > 0)
                     RefreshDocumenti();
             }
         }

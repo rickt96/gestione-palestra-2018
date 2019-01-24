@@ -7,7 +7,7 @@
         xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
         x:Class="GestionePalestra.WindowSchedaAllenamento"
         mc:Ignorable="d"
-        Height="569.734" MinHeight="580" Width="795"  MinWidth="785" MaxWidth="810" ResizeMode="NoResize" Loaded="Window_Loaded">
+        Height="683.206" MinHeight="580" Width="795"  MinWidth="785" MaxWidth="810" ResizeMode="NoResize" Loaded="Window_Loaded">
     <Grid>
         <Grid x:Name="grid_actions" Background="{StaticResource BasicGray}" Height="44" VerticalAlignment="Bottom">
             <Button x:Name="btn_stampa" Click="btn_stampa_Click" Margin="10,10,0,10" Style="{DynamicResource standardButton}" ToolTip="stampa la scheda corrente" HorizontalAlignment="Left" Width="120">
@@ -35,7 +35,7 @@
                 </StackPanel>
             </Button>
         </Grid>
-        <Grid Background="White" Margin="10,10,255.8,0" Height="155" VerticalAlignment="Top">
+        <Grid Background="White" Margin="10,30,256,0" Height="155" VerticalAlignment="Top">
             <TextBox x:Name="txt_nome" HorizontalAlignment="Left" Height="24" Margin="10,26,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="165" VerticalContentAlignment="Center"/>
             <ComboBox x:Name="cmb_freq_sett" HorizontalAlignment="Left" Margin="380,26,0,0" VerticalAlignment="Top" Width="127" Height="24" SelectedIndex="0"/>
             <ComboBox x:Name="cmb_istruttore" HorizontalAlignment="Left" Margin="195,116,0,0" Width="165" Height="24" VerticalAlignment="Top" Padding="6,0,5,0" SelectedIndex="0"/>
@@ -55,7 +55,7 @@
             <ComboBox x:Name="cmb_categoria_scheda" HorizontalAlignment="Left" Margin="195,71,0,0" VerticalAlignment="Top" Width="165" Height="24" SelectedIndex="0" Padding="3,1"/>
             <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="195,55,0,0" TextWrapping="Wrap" Text="Categoria:" VerticalAlignment="Top"/>
         </Grid>
-        <Grid Background="White" Margin="549,10,0,0" HorizontalAlignment="Left" Width="230" Height="155" VerticalAlignment="Top">
+        <Grid Background="White" Margin="538,30,0,0" HorizontalAlignment="Left" Width="230" Height="155" VerticalAlignment="Top">
             <ComboBox x:Name="cmb_cliente" HorizontalAlignment="Left" Margin="10,26,0,0" VerticalAlignment="Top" Width="144" Height="24" Padding="6,0,5,0" IsEditable="True"/>
             <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Cliente:" VerticalAlignment="Top"/>
             <TextBlock x:Name="textBlock_Copy9" HorizontalAlignment="Left" Margin="10,55,0,0" TextWrapping="Wrap" Text="Data inizio:" VerticalAlignment="Top"/>
@@ -64,13 +64,13 @@
             <DatePicker x:Name="dp_data_fine" Margin="10,116,0,0" BorderBrush="#FFACACAC" Background="White" Height="24" VerticalAlignment="Top" HorizontalAlignment="Left" Width="144"/>
             <Button x:Name="btn_rimuovi_cliente" Content="Rimuovi" Margin="159,26,10,0" VerticalAlignment="Top" Height="26" Click="btn_rimuovi_cliente_Click"/>
         </Grid>
-        <Grid Background="White" Margin="10,176,0,0" HorizontalAlignment="Left" Width="769" Height="317" VerticalAlignment="Top">
+        <Grid Background="White" Margin="10,253,10,0" Height="317" VerticalAlignment="Top">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition/>
                 <ColumnDefinition Width="100"/>
             </Grid.ColumnDefinitions>
             <Button x:Name="btn_elimina_seduta" Content="Elimina" Margin="95,0,0,10" VerticalAlignment="Bottom" ToolTip="elimina la seduta" HorizontalAlignment="Left" Click="btn_elimina_seduta_Click" Width="80" Height="30"/>
-            <Button x:Name="btn_aggiungi_seduta" Content="Aggiungi" Margin="10,0,0,10" VerticalAlignment="Bottom" ToolTip="aggiungi una nuova seduta" HorizontalAlignment="Left" Click="btn_aggiungi_seduta_Click" Height="18" Width="80"/>
+            <Button x:Name="btn_aggiungi_seduta" Content="Aggiungi" Margin="10,0,0,10" VerticalAlignment="Bottom" ToolTip="aggiungi una nuova seduta" HorizontalAlignment="Left" Click="btn_aggiungi_seduta_Click" Height="30" Width="80"/>
             <DataGrid x:Name="dg_sedute" Margin="10,10,0,45" BorderThickness="1" CanUserResizeColumns="False" CanUserSortColumns="False" CanUserReorderColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" SelectionChanged="dg_sedute_SelectionChanged" Background="White" AutoGenerateColumns="False" IsReadOnly="False" HorizontalAlignment="Left" Width="165" BorderBrush="#FFB9B9B9">
                 <DataGrid.VerticalGridLinesBrush>
                     <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.ControlColorKey}}"/>
@@ -113,6 +113,8 @@
             <RadioButton x:Name="rdb_1_serie" Content="Serie" Grid.Column="1" Margin="10.4,266,9.6,0" BorderBrush="#FFB9B9B9" Height="18" VerticalAlignment="Top"/>
             <RadioButton x:Name="rdb_2_circuito" Content="Circuito" Grid.Column="1" Margin="10.4,289,9.6,0" BorderBrush="#FFB9B9B9" Height="18" VerticalAlignment="Top"/>
         </Grid>
+        <Label Content="Informazioni" Style="{StaticResource CategoryLabel}" VerticalAlignment="Top"/>
+        <Label Content="Struttura" Style="{StaticResource CategoryLabel}" VerticalAlignment="Top" Margin="0,223,0,0"/>
 
     </Grid>
 </Window>

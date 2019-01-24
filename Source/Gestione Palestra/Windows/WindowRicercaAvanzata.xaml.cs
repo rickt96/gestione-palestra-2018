@@ -102,7 +102,7 @@ namespace GestionePalestra
                 }
                 query += ")";                       //chiude le parentesi
 
-                DataTable dataSrc = FactoryCliente.GetTableClienti(query);
+                DataTable dataSrc = ClienteController.GetTableClienti(query);
                 if (dataSrc != null)
                 {
                     Title = string.Format("Ricerca avanzata clienti - {0} campi impostati | {1} risultati", clauses.Count, dataSrc.Rows.Count);
@@ -123,11 +123,11 @@ namespace GestionePalestra
             cmb_sesso.ItemsSource = Common.Sesso;
 
             //stato
-            Common.PopulateComboBox(ref cmb_stato, FactoryTipi.GetTipi(TipiStati.StatiCliente), "Valore");
+            Common.PopulateComboBox(ref cmb_stato, TipiController.GetTipi(TipiStati.StatiCliente), "Valore");
 
             //istruttori
             cmb_istruttore.ItemsSource = null;
-            cmb_istruttore.ItemsSource = FactoryIstruttore.GetTableIstruttori(null).DefaultView;
+            cmb_istruttore.ItemsSource = IstruttoriController.GetTableIstruttori(null).DefaultView;
             cmb_istruttore.DisplayMemberPath = "Nome";
 
             //anno

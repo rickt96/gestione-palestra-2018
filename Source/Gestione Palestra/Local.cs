@@ -294,11 +294,11 @@ namespace GestionePalestra
         {
             bool status = false;
 
-            if (FactoryIstruttore.CheckCredenziali(id_istr, pwd))
+            if (IstruttoriController.CheckCredenziali(id_istr, pwd))
             {
-                User = FactoryIstruttore.Seleziona(id_istr);
+                User = IstruttoriController.Seleziona(id_istr);
                 PermessAttivi = (User.FKLivelliPermessi.HasValue)
-                    ? FactoryLivelliPermessi.Seleziona(User.FKLivelliPermessi.Value)
+                    ? LivelliPermessiController.Seleziona(User.FKLivelliPermessi.Value)
                     : null;
 
                 if (User != null && PermessAttivi != null)
@@ -643,8 +643,8 @@ namespace GestionePalestra
             try
             {
                 //caricamento dei dati: cliente e scheda
-                Cliente c = FactoryCliente.Seleziona(s.FKCliente.Value);
-                Istruttore i = FactoryIstruttore.Seleziona(s.FKIstruttore.Value);
+                Cliente c = ClienteController.Seleziona(s.FKCliente.Value);
+                Istruttore i = IstruttoriController.Seleziona(s.FKIstruttore.Value);
 
                 //stringa di output
                 StringBuilder html = new StringBuilder();
@@ -1151,7 +1151,6 @@ namespace GestionePalestra
             return res;
         }
 
-
         /// <summary>
         /// verifica accesso al profilo cliente:
         /// 0: admin puo fare tutto su tutti
@@ -1254,7 +1253,7 @@ namespace GestionePalestra
                             Nome = dir.Replace(Path.GetDirectoryName(dir) + Path.DirectorySeparatorChar, ""),
                             Descrizione = "categoria importata da cartella"
                         };
-                        int last_cat_id = FactoryCategorieEsercizi.InsertUpdate(ce);
+                        int last_cat_id = CategorieEserciziController.InsertUpdate(ce);
 
                         //per ogni estensione di immagine, aggiungi a files il contenuto della cartella che si sta scorrendo
                         foreach (string sp in searchPatterns)
@@ -1268,7 +1267,7 @@ namespace GestionePalestra
                                     Descrizione = "esercizio importato da file",
                                     Immagine = Common.ByteFromFile(file)
                                 };
-                                FactoryEsercizi.Inserisci(e);
+                                EserciziController.Inserisci(e);
                             }
                         }
                     }

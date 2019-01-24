@@ -116,7 +116,7 @@ namespace GestionePalestra
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             //caricamento livelli permessi
-            livelli = FactoryLivelliPermessi.GetListPermessi();
+            livelli = LivelliPermessiController.GetListPermessi();
 
             //listbox
             lbx_permessi.ItemsSource = checks;
@@ -155,10 +155,10 @@ namespace GestionePalestra
                 return;
 
             int id = livelli[cmb_livelli.SelectedIndex].PKLivelloPermesso;
-            if(FactoryLivelliPermessi.Delete(id) > 0)
+            if(LivelliPermessiController.Delete(id) > 0)
             {
                 Message.Alert(DialogType.delete, caption);
-                livelli = FactoryLivelliPermessi.GetListPermessi();
+                livelli = LivelliPermessiController.GetListPermessi();
                 Common.PopulateComboBox(ref cmb_livelli, livelli, "Nome");
                 cmb_livelli.SelectedIndex = -1;
             }
@@ -201,10 +201,10 @@ namespace GestionePalestra
             _livello.TEST_R = (bool)checks[19].IsChecked;
 
             //salvataggio db
-            if(FactoryLivelliPermessi.InsertUpdate(_livello) > 0)
+            if(LivelliPermessiController.InsertUpdate(_livello) > 0)
             {
                 Message.Alert(DialogType.update, caption);
-                livelli = FactoryLivelliPermessi.GetListPermessi();
+                livelli = LivelliPermessiController.GetListPermessi();
                 Common.PopulateComboBox(ref cmb_livelli, livelli, "Nome");
             }
                 

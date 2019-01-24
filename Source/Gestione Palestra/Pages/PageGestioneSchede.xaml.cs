@@ -96,7 +96,7 @@ namespace GestionePalestra.Pages
 
             int id_cat = categorie[lbx_categorie.SelectedIndex].PKCategoria;
             ControlScheda cs;
-            foreach (Scheda sc in FactorySchede.GetListSchedeCategoria(id_cat))
+            foreach (Scheda sc in SchedeController.GetListSchedeCategoria(id_cat))
             {
                 cs = new ControlScheda(sc);
                 cs.Margin = new Thickness(10, 10, 10, 10);
@@ -124,7 +124,7 @@ namespace GestionePalestra.Pages
             lbx_categorie.Items.Clear();
 
             //popolamento nuovi controlli
-            categorie = FactoryCategorieSchede.GetCategorieSchede();
+            categorie = CategorieSchedeController.GetCategorieSchede();
             foreach (CategoriaScheda cs in categorie)
             {
                 lbx_categorie.Items.Add(new ControlCategoria(
@@ -205,7 +205,7 @@ namespace GestionePalestra.Pages
             if (input != "")
             {
                 CategoriaScheda c = new CategoriaScheda() { Nome = input, Descrizione = "nessuna" };
-                if (FactoryCategorieSchede.Inserisci(c) >= 1)
+                if (CategorieSchedeController.Inserisci(c) >= 1)
                     LoadCategorie();
             }
         }
@@ -222,7 +222,7 @@ namespace GestionePalestra.Pages
             if (newname != "" && newname != c.Nome)
             {
                 c.Nome = newname;
-                if (FactoryCategorieSchede.Modifica(c) >= 1)
+                if (CategorieSchedeController.Modifica(c) >= 1)
                     LoadCategorie();
             }
         }
@@ -236,7 +236,7 @@ namespace GestionePalestra.Pages
                 return;
 
             int id = categorie[lbx_categorie.SelectedIndex].PKCategoria;
-            if (FactoryCategorieSchede.Elimina(id) > 0)
+            if (CategorieSchedeController.Elimina(id) > 0)
                 LoadCategorie();
         }
 
@@ -269,7 +269,7 @@ namespace GestionePalestra.Pages
             if (Message.Confirm(DialogType.delete, "scheda") == false)
                 return;
 
-            if (FactorySchede.Elimina(id_scheda_sel) > 0)
+            if (SchedeController.Elimina(id_scheda_sel) > 0)
             {
                 UpdateCatCounter(lbx_categorie.SelectedIndex, -1);
                 ShowSchedeCategoria();

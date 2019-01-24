@@ -16,7 +16,7 @@ namespace GestionePalestra
             InitializeComponent();
 
             //elenco istruttori
-            Common.PopulateComboBox(ref cmb_user, FactoryIstruttore.GetListIstruttori(), "NomeCompleto");
+            Common.PopulateComboBox(ref cmb_user, IstruttoriController.GetListIstruttori(), "NomeCompleto");
             cmb_user.Focus();          
         }
 

@@ -27,7 +27,7 @@ namespace GestionePalestra
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             cmb_sesso.ItemsSource = Common.Sesso;
-            Common.PopulateComboBox(ref cmb_permessi, FactoryLivelliPermessi.GetListPermessi(), "Nome");
+            Common.PopulateComboBox(ref cmb_permessi, LivelliPermessiController.GetListPermessi(), "Nome");
             dp_data_nasc.SelectedDate = new DateTime(1970, 1, 1);
         }
 
@@ -73,7 +73,7 @@ namespace GestionePalestra
             i.FKLivelliPermessi = (cmb_permessi.SelectedIndex > -1) ? (cmb_permessi.SelectedItem as LivelloPermesso).PKLivelloPermesso : (int?)null;
 
             //scrivi db
-            if (FactoryIstruttore.Inserisci(i) > 0)
+            if (IstruttoriController.Inserisci(i) > 0)
             {
                 Message.Alert(DialogType.insert, caption);
                 this.Close();

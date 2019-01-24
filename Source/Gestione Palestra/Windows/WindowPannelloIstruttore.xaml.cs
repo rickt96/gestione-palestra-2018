@@ -66,7 +66,7 @@ namespace GestionePalestra
             Session.User.Email = txt_email.Text;
 
             //scrittura db
-            if(FactoryIstruttore.Modifica(Session.User) > 0)
+            if(IstruttoriController.Modifica(Session.User) > 0)
             {
                 Message.Alert(DialogType.update, caption);
                 this.Close();

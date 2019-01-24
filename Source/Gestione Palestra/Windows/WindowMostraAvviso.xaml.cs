@@ -26,7 +26,7 @@ namespace GestionePalestra
 
         string NomeIstruttore()
         {
-            Istruttore i = FactoryIstruttore.Seleziona(a.FKIstruttore);
+            Istruttore i = IstruttoriController.Seleziona(a.FKIstruttore);
             return i.NomeCompleto;
         }
 
@@ -34,7 +34,7 @@ namespace GestionePalestra
         {
             if (a.FKCliente > 0)
             {
-                DataRow c = FactoryCliente.GetCliente(a.FKCliente.Value);
+                DataRow c = ClienteController.GetCliente(a.FKCliente.Value);
                 if (c != null)
                     txtb_cliente_dest.Text = c[1] + " " + c[2];
                 else
@@ -62,7 +62,7 @@ namespace GestionePalestra
             //*********************************
             // CARICAMENTO OGGETTO
             //*********************************
-            a = FactoryAvviso.Select(a.PKAvviso);
+            a = AvvisoController.Select(a.PKAvviso);
 
 
             //*********************************
@@ -70,7 +70,7 @@ namespace GestionePalestra
             //*********************************
 
             //caricamento immagine profilo istruttore
-            Istruttore i = FactoryIstruttore.Seleziona(a.FKIstruttore); //[SOSTITUIRE GETIMAGE]
+            Istruttore i = IstruttoriController.Seleziona(a.FKIstruttore); //[SOSTITUIRE GETIMAGE]
             img_profilo.ImageSource = Common.BitmapFromByte(i.Immagine, "BlueLogin.png");
 
             //nome istruttore
@@ -121,7 +121,7 @@ namespace GestionePalestra
             // 3. DESTINATARI
             //*********************************
             dg_stato_letture.ItemsSource = null;
-            dg_stato_letture.ItemsSource = FactoryAvviso.GetStatiLetture(a.PKAvviso).DefaultView;
+            dg_stato_letture.ItemsSource = AvvisoController.GetStatiLetture(a.PKAvviso).DefaultView;
 
 
             //*********************************
@@ -130,7 +130,7 @@ namespace GestionePalestra
 
             if(a.FKIstruttore != Session.User.PKIstruttore)//se l'avviso non di chi sta guardando
             {
-                data_lettura = FactoryAvviso.GetStatoLettura(a.PKAvviso, Session.User.PKIstruttore);
+                data_lettura = AvvisoController.GetStatoLettura(a.PKAvviso, Session.User.PKIstruttore);
                 if (data_lettura.HasValue)//se è gia stato letto non serve riconfermare
                     btn_conferma_lettura.IsEnabled = false;
                 else
@@ -166,7 +166,7 @@ namespace GestionePalestra
 
         private void btn_conferma_lettura_Click(object sender, RoutedEventArgs e)
         {
-            if(FactoryAvviso.ConfermaLetturaAvviso(a.PKAvviso, Session.User.PKIstruttore) == true)
+            if(AvvisoController.ConfermaLetturaAvviso(a.PKAvviso, Session.User.PKIstruttore) == true)
             {
                 data_lettura = DateTime.Now;
             }

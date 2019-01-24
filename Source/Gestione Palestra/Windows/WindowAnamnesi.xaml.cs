@@ -59,7 +59,7 @@ namespace GestionePalestra
             Common.PopulateComboBox(ref cmb_stile_vita, Common.Lifestyle, "Valore");
             Common.PopulateComboBox(ref cmb_obiettivo, Common.Obiettivi, "Valore");
             Common.PopulateComboBox(ref cmb_somatotipo, Common.Somatotipi, "Valore");
-            Common.PopulateComboBox(ref cmb_istruttore, FactoryIstruttore.GetListIstruttori(), "NomeCompleto");
+            Common.PopulateComboBox(ref cmb_istruttore, IstruttoriController.GetListIstruttori(), "NomeCompleto");
             nud_altezza.Value = (int)slide_altezza.Value;
             nud_peso.Value = slide_peso.Value;
             dp_data.SelectedDate = DateTime.Now;
@@ -73,7 +73,7 @@ namespace GestionePalestra
                 case FormAction.insert:
                     {
                         //carica il cliente
-                        c = FactoryCliente.Seleziona(c.PKCliente);
+                        c = ClienteController.Seleziona(c.PKCliente);
                         if (c != null) {
                             //txt_nome_cliente.Text = c.Nome;
                             //txt_cognome_cliente.Text = c.Cognome;
@@ -94,7 +94,7 @@ namespace GestionePalestra
                 case FormAction.update:
                     {
                         //carica anamnesi
-                        p = FactoryAnamnesi.Select(p.PKAnamnesi);
+                        p = AnamnesiController.Select(p.PKAnamnesi);
                         if (p != null) {
                             //dg_patologie.ItemsSource = null;
                             //p.Patologie.Add(new ElementoAnamnesi() { Valore = "asd" });
@@ -171,7 +171,7 @@ namespace GestionePalestra
 
             if (_action == FormAction.update)
             {
-                p = FactoryAnamnesi.Select(p.PKAnamnesi);
+                p = AnamnesiController.Select(p.PKAnamnesi);
                 if (p != null)
                 {
                     //
@@ -345,7 +345,7 @@ namespace GestionePalestra
                 return;
 
             //Scrittura modifiche
-            int res = FactoryAnamnesi.InsertUpdate(p);
+            int res = AnamnesiController.InsertUpdate(p);
             if (res > 0)
             {
                 Message.Alert(DialogType.update, caption);
@@ -360,7 +360,7 @@ namespace GestionePalestra
 
             if (Message.Confirm(DialogType.delete, caption))
             {
-                int res = FactoryAnamnesi.Delete(p.PKAnamnesi);
+                int res = AnamnesiController.Delete(p.PKAnamnesi);
                 if (res > 0)
                 {
                     Message.Alert(DialogType.delete, caption);
